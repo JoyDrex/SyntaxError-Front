@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SavedWcfConfigurationInformation xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="9.1" CheckSum="ArVjo2wtleW9Rr6OfoqNMR/p1TeJs8kwVx9cHWmNcuU=">
+<SavedWcfConfigurationInformation xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="9.1" CheckSum="GftytdUlMNBpK5xBVQ2raEzpa0/zs86jXZ6qzgRqYQ0=">
   <bindingConfigurations>
     <bindingConfiguration bindingType="basicHttpBinding" name="CreadorWSPortBinding">
       <properties>
@@ -112,10 +112,10 @@
     </bindingConfiguration>
   </bindingConfigurations>
   <endpoints>
-    <endpoint name="CreadorWSPort" contract="CreadorWS.CreadorWS" bindingType="basicHttpBinding" address="http://localhost:8080/BiblioWS/CreadorWS" bindingConfiguration="CreadorWSPortBinding">
+    <endpoint name="CreadorWSPort" contract="CreadorWS.CreadorWS" bindingType="basicHttpBinding" address="http://localhost:8080/myholywrapper/CreadorWS" bindingConfiguration="CreadorWSPortBinding">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>http://localhost:8080/BiblioWS/CreadorWS</serializedValue>
+          <serializedValue>http://localhost:8080/myholywrapper/CreadorWS</serializedValue>
         </property>
         <property path="/behaviorConfiguration" isComplexType="false" isExplicitlyDefined="false" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue />

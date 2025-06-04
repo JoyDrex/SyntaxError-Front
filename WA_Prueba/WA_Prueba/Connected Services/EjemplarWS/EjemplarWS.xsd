@@ -35,6 +35,16 @@
       <xs:element name="return" type="xs:int" />
     </xs:sequence>
   </xs:complexType>
+  <xs:complexType name="contarDisponiblesPorMaterial">
+    <xs:sequence>
+      <xs:element name="idMaterial" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="contarDisponiblesPorMaterialResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
   <xs:complexType name="obtenerEjemplar">
     <xs:sequence>
       <xs:element minOccurs="0" name="idEjemplar" type="xs:int" />
@@ -87,12 +97,20 @@
       <xs:element minOccurs="0" name="telefonoContacto" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="contarDisponiblesPorMaterial">
+  <xs:complexType name="listarEjemplares">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarEjemplaresResponse">
     <xs:sequence>
-      <xs:element name="idMaterial" type="xs:int" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:ejemplarDTO" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="contarDisponiblesPorMaterialResponse">
+  <xs:complexType name="eliminarEjemplar">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idEjemplar" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarEjemplarResponse">
     <xs:sequence>
       <xs:element name="return" type="xs:int" />
     </xs:sequence>
@@ -107,36 +125,12 @@
       <xs:element name="return" type="xs:int" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="eliminarEjemplar">
+  <xs:complexType name="contarTotalPorMaterial">
     <xs:sequence>
-      <xs:element minOccurs="0" name="idEjemplar" type="xs:int" />
+      <xs:element name="idMaterial" type="xs:int" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="eliminarEjemplarResponse">
-    <xs:sequence>
-      <xs:element name="return" type="xs:int" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="listarEjemplares">
-    <xs:sequence />
-  </xs:complexType>
-  <xs:complexType name="listarEjemplaresResponse">
-    <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:ejemplarDTO" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="insertarEjemplar">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="fechaAdquisicion" type="xs:dateTime" />
-      <xs:element minOccurs="0" name="disponible" type="xs:boolean" />
-      <xs:element minOccurs="0" name="tipo" type="tns:tipoEjemplar" />
-      <xs:element minOccurs="0" name="formatoDigital" type="tns:formatoDigital" />
-      <xs:element minOccurs="0" name="ubicacion" type="xs:string" />
-      <xs:element minOccurs="0" name="idSede" type="xs:int" />
-      <xs:element minOccurs="0" name="idMaterial" type="xs:int" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="insertarEjemplarResponse">
+  <xs:complexType name="contarTotalPorMaterialResponse">
     <xs:sequence>
       <xs:element name="return" type="xs:int" />
     </xs:sequence>
@@ -151,12 +145,18 @@
       <xs:element name="return" type="xs:int" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="contarTotalPorMaterial">
+  <xs:complexType name="insertarEjemplar">
     <xs:sequence>
-      <xs:element name="idMaterial" type="xs:int" />
+      <xs:element minOccurs="0" name="fechaAdquisicion" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="disponible" type="xs:boolean" />
+      <xs:element minOccurs="0" name="tipo" type="tns:tipoEjemplar" />
+      <xs:element minOccurs="0" name="formatoDigital" type="tns:formatoDigital" />
+      <xs:element minOccurs="0" name="ubicacion" type="xs:string" />
+      <xs:element minOccurs="0" name="idSede" type="xs:int" />
+      <xs:element minOccurs="0" name="idMaterial" type="xs:int" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="contarTotalPorMaterialResponse">
+  <xs:complexType name="insertarEjemplarResponse">
     <xs:sequence>
       <xs:element name="return" type="xs:int" />
     </xs:sequence>

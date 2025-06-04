@@ -10,17 +10,6 @@
   <xs:element name="listarCreadoresPorMaterialResponse" type="tns:listarCreadoresPorMaterialResponse" />
   <xs:element name="listarMaterialesPorCreador" type="tns:listarMaterialesPorCreador" />
   <xs:element name="listarMaterialesPorCreadorResponse" type="tns:listarMaterialesPorCreadorResponse" />
-  <xs:complexType name="existeRelacion">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="idMaterial" type="xs:int" />
-      <xs:element minOccurs="0" name="idCreador" type="xs:int" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="existeRelacionResponse">
-    <xs:sequence>
-      <xs:element name="return" type="xs:boolean" />
-    </xs:sequence>
-  </xs:complexType>
   <xs:complexType name="desasociarMaterialCreador">
     <xs:sequence>
       <xs:element minOccurs="0" name="idMaterial" type="xs:int" />
@@ -30,6 +19,17 @@
   <xs:complexType name="desasociarMaterialCreadorResponse">
     <xs:sequence>
       <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="existeRelacion">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idMaterial" type="xs:int" />
+      <xs:element minOccurs="0" name="idCreador" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="existeRelacionResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="listarMaterialesPorCreador">

@@ -120,6 +120,12 @@
     <None Include="Connected Services\EditorialWS\EditorialWS.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Connected Services\CreadorMaterialWS\configuration91.svcinfo" />
+    <None Include="Connected Services\CreadorMaterialWS\configuration.svcinfo" />
+    <None Include="Connected Services\CreadorMaterialWS\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <None Include="Connected Services\CreadorWS\configuration91.svcinfo" />
     <None Include="Connected Services\CreadorWS\configuration.svcinfo" />
     <None Include="Connected Services\CreadorWS\Reference.svcmap">
@@ -182,6 +188,12 @@
     <None Include="Connected Services\MaterialWS\MaterialWS.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Connected Services\EjemplarWS\configuration91.svcinfo" />
+    <None Include="Connected Services\EjemplarWS\configuration.svcinfo" />
+    <None Include="Connected Services\EjemplarWS\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="Connected Services\MaterialWS\WA_Prueba.MaterialWS.creadorDTO.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
@@ -197,6 +209,12 @@
     <Content Include="Connected Services\MaterialWS\WA_Prueba.MaterialWS.listarEjemplaresMaterialResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
+    <Content Include="Connected Services\MaterialWS\WA_Prueba.MaterialWS.listarMaterialPorCaracteresResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\MaterialWS\WA_Prueba.MaterialWS.listarPorCaracter_CreadorResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
     <Content Include="Connected Services\MaterialWS\WA_Prueba.MaterialWS.listarTodosResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
@@ -209,15 +227,12 @@
     <Content Include="Connected Services\MaterialWS\WA_Prueba.MaterialWS.obtenerPorIdResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
-    <None Include="Connected Services\PersonaWS\configuration91.svcinfo" />
-    <None Include="Connected Services\PersonaWS\configuration.svcinfo" />
-    <None Include="Connected Services\PersonaWS\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
-    <None Include="Connected Services\CreadorMaterialWS\configuration91.svcinfo" />
-    <None Include="Connected Services\CreadorMaterialWS\configuration.svcinfo" />
-    <None Include="Connected Services\CreadorMaterialWS\Reference.svcmap">
+    <Content Include="Connected Services\MaterialWS\WA_Prueba.MaterialWS.insertarMaterialResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\PrestamoWS\configuration91.svcinfo" />
+    <None Include="Connected Services\PrestamoWS\configuration.svcinfo" />
+    <None Include="Connected Services\PrestamoWS\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
@@ -227,21 +242,48 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
-    <None Include="Connected Services\EjemplarWS\configuration91.svcinfo" />
-    <None Include="Connected Services\EjemplarWS\configuration.svcinfo" />
-    <None Include="Connected Services\EjemplarWS\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
-    <None Include="Connected Services\PrestamoWS\PrestamoWS.wsdl" />
-    <None Include="Connected Services\PrestamoWS\PrestamoWS.xsd">
-      <SubType>Designer</SubType>
-    </None>
     <None Include="Connected Services\MaterialWS\configuration91.svcinfo" />
     <None Include="Connected Services\MaterialWS\configuration.svcinfo" />
     <None Include="Connected Services\MaterialWS\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Connected Services\SedeWS\configuration91.svcinfo" />
+    <None Include="Connected Services\SedeWS\configuration.svcinfo" />
+    <None Include="Connected Services\SedeWS\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Content\bootstrap-grid.css" />
+    <Content Include="Content\bootstrap-grid.min.css" />
+    <Content Include="Content\bootstrap-grid.rtl.css" />
+    <Content Include="Content\bootstrap-grid.rtl.min.css" />
+    <Content Include="Content\bootstrap-reboot.css" />
+    <Content Include="Content\bootstrap-reboot.min.css" />
+    <Content Include="Content\bootstrap-reboot.rtl.css" />
+    <Content Include="Content\bootstrap-reboot.rtl.min.css" />
+    <Content Include="Content\bootstrap-utilities.css" />
+    <Content Include="Content\bootstrap-utilities.min.css" />
+    <Content Include="Content\bootstrap-utilities.rtl.css" />
+    <Content Include="Content\bootstrap-utilities.rtl.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\bootstrap.rtl.css" />
+    <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="Content\site.css" />
+    <Content Include="InsertarMaterial.aspx" />
+    <Content Include="librosdetalles.aspx" />
+    <Content Include="librosPrincipal.aspx" />
+    <Content Include="Scripts\bootstrap.bundle.js" />
+    <Content Include="Scripts\bootstrap.bundle.min.js" />
+    <Content Include="Scripts\bootstrap.esm.js" />
+    <Content Include="Scripts\bootstrap.esm.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="BiblioMaster.Master" />
+    <None Include="Connected Services\PrestamoWS\PrestamoWS.wsdl" />
+    <None Include="Connected Services\PrestamoWS\PrestamoWS.xsd">
+      <SubType>Designer</SubType>
     </None>
     <Content Include="Connected Services\PrestamoWS\WA_Prueba.PrestamoWS.contarPrestamosActivosResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -268,66 +310,6 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
     <Content Include="Connected Services\PrestamoWS\WA_Prueba.PrestamoWS.prestamoDTO.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <None Include="Connected Services\SedeWS\configuration91.svcinfo" />
-    <None Include="Connected Services\SedeWS\configuration.svcinfo" />
-    <None Include="Connected Services\SedeWS\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
-    <None Include="Connected Services\PrestamoWS\configuration91.svcinfo" />
-    <None Include="Connected Services\PrestamoWS\configuration.svcinfo" />
-    <None Include="Connected Services\PrestamoWS\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
-    <Content Include="Content\bootstrap-grid.css" />
-    <Content Include="Content\bootstrap-grid.min.css" />
-    <Content Include="Content\bootstrap-grid.rtl.css" />
-    <Content Include="Content\bootstrap-grid.rtl.min.css" />
-    <Content Include="Content\bootstrap-reboot.css" />
-    <Content Include="Content\bootstrap-reboot.min.css" />
-    <Content Include="Content\bootstrap-reboot.rtl.css" />
-    <Content Include="Content\bootstrap-reboot.rtl.min.css" />
-    <Content Include="Content\bootstrap-utilities.css" />
-    <Content Include="Content\bootstrap-utilities.min.css" />
-    <Content Include="Content\bootstrap-utilities.rtl.css" />
-    <Content Include="Content\bootstrap-utilities.rtl.min.css" />
-    <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\bootstrap.rtl.css" />
-    <Content Include="Content\bootstrap.rtl.min.css" />
-    <Content Include="Content\site.css" />
-    <Content Include="librosdetalles.aspx" />
-    <Content Include="librosPrincipal.aspx" />
-    <Content Include="Scripts\bootstrap.bundle.js" />
-    <Content Include="Scripts\bootstrap.bundle.min.js" />
-    <Content Include="Scripts\bootstrap.esm.js" />
-    <Content Include="Scripts\bootstrap.esm.min.js" />
-    <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="BiblioMaster.Master" />
-    <None Include="Connected Services\PersonaWS\PersonaWS.wsdl" />
-    <None Include="Connected Services\PersonaWS\PersonaWS.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <Content Include="Connected Services\PersonaWS\WA_Prueba.PersonaWS.eliminarPersonaResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\PersonaWS\WA_Prueba.PersonaWS.insertarPersonaResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\PersonaWS\WA_Prueba.PersonaWS.listarPersonasResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\PersonaWS\WA_Prueba.PersonaWS.modificarPersonaResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\PersonaWS\WA_Prueba.PersonaWS.obtenerPersonaResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\PersonaWS\WA_Prueba.PersonaWS.personaDTO.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
     <None Include="Connected Services\SedeWS\SedeWS.wsdl" />
@@ -392,11 +374,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
-    <Compile Include="Connected Services\PersonaWS\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Compile>
     <Compile Include="Connected Services\PrestamoWS\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -406,6 +383,13 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="InsertarMaterial.aspx.cs">
+      <DependentUpon>InsertarMaterial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InsertarMaterial.aspx.designer.cs">
+      <DependentUpon>InsertarMaterial.aspx</DependentUpon>
     </Compile>
     <Compile Include="librosdetalles.aspx.cs">
       <DependentUpon>librosdetalles.aspx</DependentUpon>
@@ -468,7 +452,6 @@
     <WCFMetadataStorage Include="Connected Services\EditorialWS\" />
     <WCFMetadataStorage Include="Connected Services\EjemplarWS\" />
     <WCFMetadataStorage Include="Connected Services\MaterialWS\" />
-    <WCFMetadataStorage Include="Connected Services\PersonaWS\" />
     <WCFMetadataStorage Include="Connected Services\PrestamoWS\" />
     <WCFMetadataStorage Include="Connected Services\SedeWS\" />
   </ItemGroup>

@@ -15,15 +15,6 @@ namespace WA_Prueba
     {
 
         /// <summary>
-        /// Control dgvLibros.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView dgvLibros;
-
-        /// <summary>
         /// Control btnAgregarMaterial.
         /// </summary>
         /// <remarks>
@@ -31,6 +22,15 @@ namespace WA_Prueba
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnAgregarMaterial;
+
+        /// <summary>
+        /// Control dgvLibros.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView dgvLibros;
 
         /// <summary>
         /// Control detallesContainer.

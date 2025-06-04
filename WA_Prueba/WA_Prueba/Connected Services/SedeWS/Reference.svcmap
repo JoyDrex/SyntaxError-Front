@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="2137557f-381c-4f51-9344-ba27073886e0" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="fe9076f5-090e-4106-9c9f-63080f9f2973" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -19,11 +19,11 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:8080/BiblioWS/SedeWS?wsdl" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://localhost:8080/myholywrapper/SedeWS?wsdl" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="SedeWS.wsdl" MetadataType="Wsdl" ID="ad66eed5-5e2e-4720-bc4e-ec670679eb4b" SourceId="1" SourceUrl="http://localhost:8080/BiblioWS/SedeWS?wsdl" />
-    <MetadataFile FileName="SedeWS.xsd" MetadataType="Schema" ID="9416db19-f56a-4a78-9ca7-c130663b91eb" SourceId="1" SourceUrl="http://localhost:8080/BiblioWS/SedeWS?xsd=1" />
+    <MetadataFile FileName="SedeWS.wsdl" MetadataType="Wsdl" ID="4a9dd1b6-90a1-462c-b8f4-c749fa437262" SourceId="1" SourceUrl="http://localhost:8080/myholywrapper/SedeWS?wsdl" />
+    <MetadataFile FileName="SedeWS.xsd" MetadataType="Schema" ID="8775f20d-b3a2-4e87-9fa8-da71911dd46c" SourceId="1" SourceUrl="http://localhost:8080/myholywrapper/SedeWS?xsd=1" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

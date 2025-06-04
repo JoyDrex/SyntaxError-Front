@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="ff5450a1-521d-4a27-a70e-bcd158eda7f3" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="bf67e3b8-87fa-4195-bcbe-14040e8791a2" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -19,11 +19,11 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:8080/BiblioWS/EditorialWS?wsdl" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://localhost:8080/myholywrapper/EditorialWS?wsdl" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="EditorialWS.wsdl" MetadataType="Wsdl" ID="f067b8c9-021c-418d-bb37-fa9b98e3d58b" SourceId="1" SourceUrl="http://localhost:8080/BiblioWS/EditorialWS?wsdl" />
-    <MetadataFile FileName="EditorialWS.xsd" MetadataType="Schema" ID="9af7da2c-4eec-4135-bd77-0c722c417b2c" SourceId="1" SourceUrl="http://localhost:8080/BiblioWS/EditorialWS?xsd=1" />
+    <MetadataFile FileName="EditorialWS.wsdl" MetadataType="Wsdl" ID="6cac77a8-9978-4495-81ba-df004e63e8e4" SourceId="1" SourceUrl="http://localhost:8080/myholywrapper/EditorialWS?wsdl" />
+    <MetadataFile FileName="EditorialWS.xsd" MetadataType="Schema" ID="2a7f83a1-910a-47ab-a40f-b6522f4d780b" SourceId="1" SourceUrl="http://localhost:8080/myholywrapper/EditorialWS?xsd=1" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

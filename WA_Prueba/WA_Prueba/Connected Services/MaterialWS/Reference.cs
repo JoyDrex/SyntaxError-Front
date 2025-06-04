@@ -16,6 +16,77 @@ namespace WA_Prueba.MaterialWS {
     public interface MaterialWS {
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://bibliows.biblioteca.syntaxerror.com/MaterialWS/listarMaterialPorCaracteres" +
+            "Request", ReplyAction="http://bibliows.biblioteca.syntaxerror.com/MaterialWS/listarMaterialPorCaracteres" +
+            "Response")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        WA_Prueba.MaterialWS.listarMaterialPorCaracteresResponse listarMaterialPorCaracteres(WA_Prueba.MaterialWS.listarMaterialPorCaracteresRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://bibliows.biblioteca.syntaxerror.com/MaterialWS/listarMaterialPorCaracteres" +
+            "Request", ReplyAction="http://bibliows.biblioteca.syntaxerror.com/MaterialWS/listarMaterialPorCaracteres" +
+            "Response")]
+        System.Threading.Tasks.Task<WA_Prueba.MaterialWS.listarMaterialPorCaracteresResponse> listarMaterialPorCaracteresAsync(WA_Prueba.MaterialWS.listarMaterialPorCaracteresRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://bibliows.biblioteca.syntaxerror.com/MaterialWS/insertarMaterialRequest", ReplyAction="http://bibliows.biblioteca.syntaxerror.com/MaterialWS/insertarMaterialResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        WA_Prueba.MaterialWS.insertarMaterialResponse insertarMaterial(WA_Prueba.MaterialWS.insertarMaterialRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://bibliows.biblioteca.syntaxerror.com/MaterialWS/insertarMaterialRequest", ReplyAction="http://bibliows.biblioteca.syntaxerror.com/MaterialWS/insertarMaterialResponse")]
+        System.Threading.Tasks.Task<WA_Prueba.MaterialWS.insertarMaterialResponse> insertarMaterialAsync(WA_Prueba.MaterialWS.insertarMaterialRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://bibliows.biblioteca.syntaxerror.com/MaterialWS/listarTodosRequest", ReplyAction="http://bibliows.biblioteca.syntaxerror.com/MaterialWS/listarTodosResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        WA_Prueba.MaterialWS.listarTodosResponse listarTodos(WA_Prueba.MaterialWS.listarTodosRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://bibliows.biblioteca.syntaxerror.com/MaterialWS/listarTodosRequest", ReplyAction="http://bibliows.biblioteca.syntaxerror.com/MaterialWS/listarTodosResponse")]
+        System.Threading.Tasks.Task<WA_Prueba.MaterialWS.listarTodosResponse> listarTodosAsync(WA_Prueba.MaterialWS.listarTodosRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://bibliows.biblioteca.syntaxerror.com/MaterialWS/obtenerPorIdRequest", ReplyAction="http://bibliows.biblioteca.syntaxerror.com/MaterialWS/obtenerPorIdResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        WA_Prueba.MaterialWS.obtenerPorIdResponse obtenerPorId(WA_Prueba.MaterialWS.obtenerPorIdRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://bibliows.biblioteca.syntaxerror.com/MaterialWS/obtenerPorIdRequest", ReplyAction="http://bibliows.biblioteca.syntaxerror.com/MaterialWS/obtenerPorIdResponse")]
+        System.Threading.Tasks.Task<WA_Prueba.MaterialWS.obtenerPorIdResponse> obtenerPorIdAsync(WA_Prueba.MaterialWS.obtenerPorIdRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://bibliows.biblioteca.syntaxerror.com/MaterialWS/modificarMaterialRequest", ReplyAction="http://bibliows.biblioteca.syntaxerror.com/MaterialWS/modificarMaterialResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        WA_Prueba.MaterialWS.modificarMaterialResponse modificarMaterial(WA_Prueba.MaterialWS.modificarMaterialRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://bibliows.biblioteca.syntaxerror.com/MaterialWS/modificarMaterialRequest", ReplyAction="http://bibliows.biblioteca.syntaxerror.com/MaterialWS/modificarMaterialResponse")]
+        System.Threading.Tasks.Task<WA_Prueba.MaterialWS.modificarMaterialResponse> modificarMaterialAsync(WA_Prueba.MaterialWS.modificarMaterialRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://bibliows.biblioteca.syntaxerror.com/MaterialWS/eliminarMaterialRequest", ReplyAction="http://bibliows.biblioteca.syntaxerror.com/MaterialWS/eliminarMaterialResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        WA_Prueba.MaterialWS.eliminarMaterialResponse eliminarMaterial(WA_Prueba.MaterialWS.eliminarMaterialRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://bibliows.biblioteca.syntaxerror.com/MaterialWS/eliminarMaterialRequest", ReplyAction="http://bibliows.biblioteca.syntaxerror.com/MaterialWS/eliminarMaterialResponse")]
+        System.Threading.Tasks.Task<WA_Prueba.MaterialWS.eliminarMaterialResponse> eliminarMaterialAsync(WA_Prueba.MaterialWS.eliminarMaterialRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://bibliows.biblioteca.syntaxerror.com/MaterialWS/listarPorCaracter_CreadorRe" +
+            "quest", ReplyAction="http://bibliows.biblioteca.syntaxerror.com/MaterialWS/listarPorCaracter_CreadorRe" +
+            "sponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        WA_Prueba.MaterialWS.listarPorCaracter_CreadorResponse listarPorCaracter_Creador(WA_Prueba.MaterialWS.listarPorCaracter_CreadorRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://bibliows.biblioteca.syntaxerror.com/MaterialWS/listarPorCaracter_CreadorRe" +
+            "quest", ReplyAction="http://bibliows.biblioteca.syntaxerror.com/MaterialWS/listarPorCaracter_CreadorRe" +
+            "sponse")]
+        System.Threading.Tasks.Task<WA_Prueba.MaterialWS.listarPorCaracter_CreadorResponse> listarPorCaracter_CreadorAsync(WA_Prueba.MaterialWS.listarPorCaracter_CreadorRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://bibliows.biblioteca.syntaxerror.com/MaterialWS/listarCreadoresPorMaterialR" +
             "equest", ReplyAction="http://bibliows.biblioteca.syntaxerror.com/MaterialWS/listarCreadoresPorMaterialR" +
             "esponse")]
@@ -40,477 +111,6 @@ namespace WA_Prueba.MaterialWS {
             "uest", ReplyAction="http://bibliows.biblioteca.syntaxerror.com/MaterialWS/listarEjemplaresMaterialRes" +
             "ponse")]
         System.Threading.Tasks.Task<WA_Prueba.MaterialWS.listarEjemplaresMaterialResponse> listarEjemplaresMaterialAsync(WA_Prueba.MaterialWS.listarEjemplaresMaterialRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://bibliows.biblioteca.syntaxerror.com/MaterialWS/obtenerPorIdRequest", ReplyAction="http://bibliows.biblioteca.syntaxerror.com/MaterialWS/obtenerPorIdResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        WA_Prueba.MaterialWS.obtenerPorIdResponse obtenerPorId(WA_Prueba.MaterialWS.obtenerPorIdRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://bibliows.biblioteca.syntaxerror.com/MaterialWS/obtenerPorIdRequest", ReplyAction="http://bibliows.biblioteca.syntaxerror.com/MaterialWS/obtenerPorIdResponse")]
-        System.Threading.Tasks.Task<WA_Prueba.MaterialWS.obtenerPorIdResponse> obtenerPorIdAsync(WA_Prueba.MaterialWS.obtenerPorIdRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://bibliows.biblioteca.syntaxerror.com/MaterialWS/listarTodosRequest", ReplyAction="http://bibliows.biblioteca.syntaxerror.com/MaterialWS/listarTodosResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        WA_Prueba.MaterialWS.listarTodosResponse listarTodos(WA_Prueba.MaterialWS.listarTodosRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://bibliows.biblioteca.syntaxerror.com/MaterialWS/listarTodosRequest", ReplyAction="http://bibliows.biblioteca.syntaxerror.com/MaterialWS/listarTodosResponse")]
-        System.Threading.Tasks.Task<WA_Prueba.MaterialWS.listarTodosResponse> listarTodosAsync(WA_Prueba.MaterialWS.listarTodosRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://bibliows.biblioteca.syntaxerror.com/MaterialWS/modificarMaterialRequest", ReplyAction="http://bibliows.biblioteca.syntaxerror.com/MaterialWS/modificarMaterialResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        WA_Prueba.MaterialWS.modificarMaterialResponse modificarMaterial(WA_Prueba.MaterialWS.modificarMaterialRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://bibliows.biblioteca.syntaxerror.com/MaterialWS/modificarMaterialRequest", ReplyAction="http://bibliows.biblioteca.syntaxerror.com/MaterialWS/modificarMaterialResponse")]
-        System.Threading.Tasks.Task<WA_Prueba.MaterialWS.modificarMaterialResponse> modificarMaterialAsync(WA_Prueba.MaterialWS.modificarMaterialRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://bibliows.biblioteca.syntaxerror.com/MaterialWS/eliminarMaterialRequest", ReplyAction="http://bibliows.biblioteca.syntaxerror.com/MaterialWS/eliminarMaterialResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        WA_Prueba.MaterialWS.eliminarMaterialResponse eliminarMaterial(WA_Prueba.MaterialWS.eliminarMaterialRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://bibliows.biblioteca.syntaxerror.com/MaterialWS/eliminarMaterialRequest", ReplyAction="http://bibliows.biblioteca.syntaxerror.com/MaterialWS/eliminarMaterialResponse")]
-        System.Threading.Tasks.Task<WA_Prueba.MaterialWS.eliminarMaterialResponse> eliminarMaterialAsync(WA_Prueba.MaterialWS.eliminarMaterialRequest request);
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://bibliows.biblioteca.syntaxerror.com/")]
-    public partial class creadorDTO : object, System.ComponentModel.INotifyPropertyChanged {
-        
-        private bool activoField;
-        
-        private bool activoFieldSpecified;
-        
-        private int idAutorField;
-        
-        private bool idAutorFieldSpecified;
-        
-        private string maternoField;
-        
-        private string nacionalidadField;
-        
-        private string nombreField;
-        
-        private string paternoField;
-        
-        private string seudonimoField;
-        
-        private tipoAutor tipoField;
-        
-        private bool tipoFieldSpecified;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public bool activo {
-            get {
-                return this.activoField;
-            }
-            set {
-                this.activoField = value;
-                this.RaisePropertyChanged("activo");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool activoSpecified {
-            get {
-                return this.activoFieldSpecified;
-            }
-            set {
-                this.activoFieldSpecified = value;
-                this.RaisePropertyChanged("activoSpecified");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public int idAutor {
-            get {
-                return this.idAutorField;
-            }
-            set {
-                this.idAutorField = value;
-                this.RaisePropertyChanged("idAutor");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool idAutorSpecified {
-            get {
-                return this.idAutorFieldSpecified;
-            }
-            set {
-                this.idAutorFieldSpecified = value;
-                this.RaisePropertyChanged("idAutorSpecified");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
-        public string materno {
-            get {
-                return this.maternoField;
-            }
-            set {
-                this.maternoField = value;
-                this.RaisePropertyChanged("materno");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
-        public string nacionalidad {
-            get {
-                return this.nacionalidadField;
-            }
-            set {
-                this.nacionalidadField = value;
-                this.RaisePropertyChanged("nacionalidad");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
-        public string nombre {
-            get {
-                return this.nombreField;
-            }
-            set {
-                this.nombreField = value;
-                this.RaisePropertyChanged("nombre");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
-        public string paterno {
-            get {
-                return this.paternoField;
-            }
-            set {
-                this.paternoField = value;
-                this.RaisePropertyChanged("paterno");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
-        public string seudonimo {
-            get {
-                return this.seudonimoField;
-            }
-            set {
-                this.seudonimoField = value;
-                this.RaisePropertyChanged("seudonimo");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=7)]
-        public tipoAutor tipo {
-            get {
-                return this.tipoField;
-            }
-            set {
-                this.tipoField = value;
-                this.RaisePropertyChanged("tipo");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool tipoSpecified {
-            get {
-                return this.tipoFieldSpecified;
-            }
-            set {
-                this.tipoFieldSpecified = value;
-                this.RaisePropertyChanged("tipoSpecified");
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
-    [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://bibliows.biblioteca.syntaxerror.com/")]
-    public enum tipoAutor {
-        
-        /// <remarks/>
-        AUTOR,
-        
-        /// <remarks/>
-        TRADUCTOR,
-        
-        /// <remarks/>
-        ILUSTRADOR,
-        
-        /// <remarks/>
-        NARRADOR,
-        
-        /// <remarks/>
-        EDITOR,
-        
-        /// <remarks/>
-        GUIONISTA,
-        
-        /// <remarks/>
-        DISENADOR_EDITORIAL,
-        
-        /// <remarks/>
-        OTRO,
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://bibliows.biblioteca.syntaxerror.com/")]
-    public partial class sedeDTO : object, System.ComponentModel.INotifyPropertyChanged {
-        
-        private bool activaField;
-        
-        private bool activaFieldSpecified;
-        
-        private string correoContactoField;
-        
-        private string direccionField;
-        
-        private string distritoField;
-        
-        private int idSedeField;
-        
-        private bool idSedeFieldSpecified;
-        
-        private string nombreField;
-        
-        private string telefonoContactoField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public bool activa {
-            get {
-                return this.activaField;
-            }
-            set {
-                this.activaField = value;
-                this.RaisePropertyChanged("activa");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool activaSpecified {
-            get {
-                return this.activaFieldSpecified;
-            }
-            set {
-                this.activaFieldSpecified = value;
-                this.RaisePropertyChanged("activaSpecified");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public string correoContacto {
-            get {
-                return this.correoContactoField;
-            }
-            set {
-                this.correoContactoField = value;
-                this.RaisePropertyChanged("correoContacto");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
-        public string direccion {
-            get {
-                return this.direccionField;
-            }
-            set {
-                this.direccionField = value;
-                this.RaisePropertyChanged("direccion");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
-        public string distrito {
-            get {
-                return this.distritoField;
-            }
-            set {
-                this.distritoField = value;
-                this.RaisePropertyChanged("distrito");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
-        public int idSede {
-            get {
-                return this.idSedeField;
-            }
-            set {
-                this.idSedeField = value;
-                this.RaisePropertyChanged("idSede");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool idSedeSpecified {
-            get {
-                return this.idSedeFieldSpecified;
-            }
-            set {
-                this.idSedeFieldSpecified = value;
-                this.RaisePropertyChanged("idSedeSpecified");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
-        public string nombre {
-            get {
-                return this.nombreField;
-            }
-            set {
-                this.nombreField = value;
-                this.RaisePropertyChanged("nombre");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
-        public string telefonoContacto {
-            get {
-                return this.telefonoContactoField;
-            }
-            set {
-                this.telefonoContactoField = value;
-                this.RaisePropertyChanged("telefonoContacto");
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://bibliows.biblioteca.syntaxerror.com/")]
-    public partial class editorialDTO : object, System.ComponentModel.INotifyPropertyChanged {
-        
-        private int idEditorialField;
-        
-        private bool idEditorialFieldSpecified;
-        
-        private string nombreField;
-        
-        private string paisField;
-        
-        private string sitioWebField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public int idEditorial {
-            get {
-                return this.idEditorialField;
-            }
-            set {
-                this.idEditorialField = value;
-                this.RaisePropertyChanged("idEditorial");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool idEditorialSpecified {
-            get {
-                return this.idEditorialFieldSpecified;
-            }
-            set {
-                this.idEditorialFieldSpecified = value;
-                this.RaisePropertyChanged("idEditorialSpecified");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public string nombre {
-            get {
-                return this.nombreField;
-            }
-            set {
-                this.nombreField = value;
-                this.RaisePropertyChanged("nombre");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
-        public string pais {
-            get {
-                return this.paisField;
-            }
-            set {
-                this.paisField = value;
-                this.RaisePropertyChanged("pais");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
-        public string sitioWeb {
-            get {
-                return this.sitioWebField;
-            }
-            set {
-                this.sitioWebField = value;
-                this.RaisePropertyChanged("sitioWeb");
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
     }
     
     /// <remarks/>
@@ -674,17 +274,233 @@ namespace WA_Prueba.MaterialWS {
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://bibliows.biblioteca.syntaxerror.com/")]
-    public enum nivelDeIngles {
+    public partial class editorialDTO : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private int idEditorialField;
+        
+        private bool idEditorialFieldSpecified;
+        
+        private string nombreField;
+        
+        private string paisField;
+        
+        private string sitioWebField;
         
         /// <remarks/>
-        BASICO,
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public int idEditorial {
+            get {
+                return this.idEditorialField;
+            }
+            set {
+                this.idEditorialField = value;
+                this.RaisePropertyChanged("idEditorial");
+            }
+        }
         
         /// <remarks/>
-        INTERMEDIO,
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool idEditorialSpecified {
+            get {
+                return this.idEditorialFieldSpecified;
+            }
+            set {
+                this.idEditorialFieldSpecified = value;
+                this.RaisePropertyChanged("idEditorialSpecified");
+            }
+        }
         
         /// <remarks/>
-        AVANZADO,
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public string nombre {
+            get {
+                return this.nombreField;
+            }
+            set {
+                this.nombreField = value;
+                this.RaisePropertyChanged("nombre");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public string pais {
+            get {
+                return this.paisField;
+            }
+            set {
+                this.paisField = value;
+                this.RaisePropertyChanged("pais");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
+        public string sitioWeb {
+            get {
+                return this.sitioWebField;
+            }
+            set {
+                this.sitioWebField = value;
+                this.RaisePropertyChanged("sitioWeb");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://bibliows.biblioteca.syntaxerror.com/")]
+    public partial class sedeDTO : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private bool activaField;
+        
+        private bool activaFieldSpecified;
+        
+        private string correoContactoField;
+        
+        private string direccionField;
+        
+        private string distritoField;
+        
+        private int idSedeField;
+        
+        private bool idSedeFieldSpecified;
+        
+        private string nombreField;
+        
+        private string telefonoContactoField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public bool activa {
+            get {
+                return this.activaField;
+            }
+            set {
+                this.activaField = value;
+                this.RaisePropertyChanged("activa");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool activaSpecified {
+            get {
+                return this.activaFieldSpecified;
+            }
+            set {
+                this.activaFieldSpecified = value;
+                this.RaisePropertyChanged("activaSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public string correoContacto {
+            get {
+                return this.correoContactoField;
+            }
+            set {
+                this.correoContactoField = value;
+                this.RaisePropertyChanged("correoContacto");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public string direccion {
+            get {
+                return this.direccionField;
+            }
+            set {
+                this.direccionField = value;
+                this.RaisePropertyChanged("direccion");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
+        public string distrito {
+            get {
+                return this.distritoField;
+            }
+            set {
+                this.distritoField = value;
+                this.RaisePropertyChanged("distrito");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
+        public int idSede {
+            get {
+                return this.idSedeField;
+            }
+            set {
+                this.idSedeField = value;
+                this.RaisePropertyChanged("idSede");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool idSedeSpecified {
+            get {
+                return this.idSedeFieldSpecified;
+            }
+            set {
+                this.idSedeFieldSpecified = value;
+                this.RaisePropertyChanged("idSedeSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
+        public string nombre {
+            get {
+                return this.nombreField;
+            }
+            set {
+                this.nombreField = value;
+                this.RaisePropertyChanged("nombre");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
+        public string telefonoContacto {
+            get {
+                return this.telefonoContactoField;
+            }
+            set {
+                this.telefonoContactoField = value;
+                this.RaisePropertyChanged("telefonoContacto");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
     }
     
     /// <remarks/>
@@ -919,38 +735,257 @@ namespace WA_Prueba.MaterialWS {
         DIGITAL,
     }
     
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://bibliows.biblioteca.syntaxerror.com/")]
+    public partial class creadorDTO : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private bool activoField;
+        
+        private bool activoFieldSpecified;
+        
+        private int idAutorField;
+        
+        private bool idAutorFieldSpecified;
+        
+        private string maternoField;
+        
+        private string nacionalidadField;
+        
+        private string nombreField;
+        
+        private string paternoField;
+        
+        private string seudonimoField;
+        
+        private tipoAutor tipoField;
+        
+        private bool tipoFieldSpecified;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public bool activo {
+            get {
+                return this.activoField;
+            }
+            set {
+                this.activoField = value;
+                this.RaisePropertyChanged("activo");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool activoSpecified {
+            get {
+                return this.activoFieldSpecified;
+            }
+            set {
+                this.activoFieldSpecified = value;
+                this.RaisePropertyChanged("activoSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public int idAutor {
+            get {
+                return this.idAutorField;
+            }
+            set {
+                this.idAutorField = value;
+                this.RaisePropertyChanged("idAutor");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool idAutorSpecified {
+            get {
+                return this.idAutorFieldSpecified;
+            }
+            set {
+                this.idAutorFieldSpecified = value;
+                this.RaisePropertyChanged("idAutorSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public string materno {
+            get {
+                return this.maternoField;
+            }
+            set {
+                this.maternoField = value;
+                this.RaisePropertyChanged("materno");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
+        public string nacionalidad {
+            get {
+                return this.nacionalidadField;
+            }
+            set {
+                this.nacionalidadField = value;
+                this.RaisePropertyChanged("nacionalidad");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
+        public string nombre {
+            get {
+                return this.nombreField;
+            }
+            set {
+                this.nombreField = value;
+                this.RaisePropertyChanged("nombre");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
+        public string paterno {
+            get {
+                return this.paternoField;
+            }
+            set {
+                this.paternoField = value;
+                this.RaisePropertyChanged("paterno");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
+        public string seudonimo {
+            get {
+                return this.seudonimoField;
+            }
+            set {
+                this.seudonimoField = value;
+                this.RaisePropertyChanged("seudonimo");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=7)]
+        public tipoAutor tipo {
+            get {
+                return this.tipoField;
+            }
+            set {
+                this.tipoField = value;
+                this.RaisePropertyChanged("tipo");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool tipoSpecified {
+            get {
+                return this.tipoFieldSpecified;
+            }
+            set {
+                this.tipoFieldSpecified = value;
+                this.RaisePropertyChanged("tipoSpecified");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://bibliows.biblioteca.syntaxerror.com/")]
+    public enum tipoAutor {
+        
+        /// <remarks/>
+        AUTOR,
+        
+        /// <remarks/>
+        TRADUCTOR,
+        
+        /// <remarks/>
+        ILUSTRADOR,
+        
+        /// <remarks/>
+        NARRADOR,
+        
+        /// <remarks/>
+        EDITOR,
+        
+        /// <remarks/>
+        GUIONISTA,
+        
+        /// <remarks/>
+        DISENADOR_EDITORIAL,
+        
+        /// <remarks/>
+        OTRO,
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://bibliows.biblioteca.syntaxerror.com/")]
+    public enum nivelDeIngles {
+        
+        /// <remarks/>
+        BASICO,
+        
+        /// <remarks/>
+        INTERMEDIO,
+        
+        /// <remarks/>
+        AVANZADO,
+    }
+    
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarCreadoresPorMaterial", WrapperNamespace="http://bibliows.biblioteca.syntaxerror.com/", IsWrapped=true)]
-    public partial class listarCreadoresPorMaterialRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarMaterialPorCaracteres", WrapperNamespace="http://bibliows.biblioteca.syntaxerror.com/", IsWrapped=true)]
+    public partial class listarMaterialPorCaracteresRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://bibliows.biblioteca.syntaxerror.com/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idMaterial;
+        public string caracteres;
         
-        public listarCreadoresPorMaterialRequest() {
+        public listarMaterialPorCaracteresRequest() {
         }
         
-        public listarCreadoresPorMaterialRequest(int idMaterial) {
-            this.idMaterial = idMaterial;
+        public listarMaterialPorCaracteresRequest(string caracteres) {
+            this.caracteres = caracteres;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarCreadoresPorMaterialResponse", WrapperNamespace="http://bibliows.biblioteca.syntaxerror.com/", IsWrapped=true)]
-    public partial class listarCreadoresPorMaterialResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarMaterialPorCaracteresResponse", WrapperNamespace="http://bibliows.biblioteca.syntaxerror.com/", IsWrapped=true)]
+    public partial class listarMaterialPorCaracteresResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://bibliows.biblioteca.syntaxerror.com/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public WA_Prueba.MaterialWS.creadorDTO[] @return;
+        public WA_Prueba.MaterialWS.materialDTO[] @return;
         
-        public listarCreadoresPorMaterialResponse() {
+        public listarMaterialPorCaracteresResponse() {
         }
         
-        public listarCreadoresPorMaterialResponse(WA_Prueba.MaterialWS.creadorDTO[] @return) {
+        public listarMaterialPorCaracteresResponse(WA_Prueba.MaterialWS.materialDTO[] @return) {
             this.@return = @return;
         }
     }
@@ -958,35 +993,88 @@ namespace WA_Prueba.MaterialWS {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarEjemplaresMaterial", WrapperNamespace="http://bibliows.biblioteca.syntaxerror.com/", IsWrapped=true)]
-    public partial class listarEjemplaresMaterialRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarMaterial", WrapperNamespace="http://bibliows.biblioteca.syntaxerror.com/", IsWrapped=true)]
+    public partial class insertarMaterialRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://bibliows.biblioteca.syntaxerror.com/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idMaterial;
+        public string titulo;
         
-        public listarEjemplaresMaterialRequest() {
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://bibliows.biblioteca.syntaxerror.com/", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string edicion;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://bibliows.biblioteca.syntaxerror.com/", Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public WA_Prueba.MaterialWS.nivelDeIngles nivel;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://bibliows.biblioteca.syntaxerror.com/", Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int anioPublicacion;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://bibliows.biblioteca.syntaxerror.com/", Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string portada;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://bibliows.biblioteca.syntaxerror.com/", Order=5)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idEditorial;
+        
+        public insertarMaterialRequest() {
         }
         
-        public listarEjemplaresMaterialRequest(int idMaterial) {
-            this.idMaterial = idMaterial;
+        public insertarMaterialRequest(string titulo, string edicion, WA_Prueba.MaterialWS.nivelDeIngles nivel, int anioPublicacion, string portada, int idEditorial) {
+            this.titulo = titulo;
+            this.edicion = edicion;
+            this.nivel = nivel;
+            this.anioPublicacion = anioPublicacion;
+            this.portada = portada;
+            this.idEditorial = idEditorial;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarEjemplaresMaterialResponse", WrapperNamespace="http://bibliows.biblioteca.syntaxerror.com/", IsWrapped=true)]
-    public partial class listarEjemplaresMaterialResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarMaterialResponse", WrapperNamespace="http://bibliows.biblioteca.syntaxerror.com/", IsWrapped=true)]
+    public partial class insertarMaterialResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://bibliows.biblioteca.syntaxerror.com/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int @return;
+        
+        public insertarMaterialResponse() {
+        }
+        
+        public insertarMaterialResponse(int @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTodos", WrapperNamespace="http://bibliows.biblioteca.syntaxerror.com/", IsWrapped=true)]
+    public partial class listarTodosRequest {
+        
+        public listarTodosRequest() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTodosResponse", WrapperNamespace="http://bibliows.biblioteca.syntaxerror.com/", IsWrapped=true)]
+    public partial class listarTodosResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://bibliows.biblioteca.syntaxerror.com/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public WA_Prueba.MaterialWS.ejemplarDTO[] @return;
+        public WA_Prueba.MaterialWS.materialDTO[] @return;
         
-        public listarEjemplaresMaterialResponse() {
+        public listarTodosResponse() {
         }
         
-        public listarEjemplaresMaterialResponse(WA_Prueba.MaterialWS.ejemplarDTO[] @return) {
+        public listarTodosResponse(WA_Prueba.MaterialWS.materialDTO[] @return) {
             this.@return = @return;
         }
     }
@@ -1023,34 +1111,6 @@ namespace WA_Prueba.MaterialWS {
         }
         
         public obtenerPorIdResponse(WA_Prueba.MaterialWS.materialDTO @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTodos", WrapperNamespace="http://bibliows.biblioteca.syntaxerror.com/", IsWrapped=true)]
-    public partial class listarTodosRequest {
-        
-        public listarTodosRequest() {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTodosResponse", WrapperNamespace="http://bibliows.biblioteca.syntaxerror.com/", IsWrapped=true)]
-    public partial class listarTodosResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://bibliows.biblioteca.syntaxerror.com/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public WA_Prueba.MaterialWS.materialDTO[] @return;
-        
-        public listarTodosResponse() {
-        }
-        
-        public listarTodosResponse(WA_Prueba.MaterialWS.materialDTO[] @return) {
             this.@return = @return;
         }
     }
@@ -1157,6 +1217,114 @@ namespace WA_Prueba.MaterialWS {
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPorCaracter_Creador", WrapperNamespace="http://bibliows.biblioteca.syntaxerror.com/", IsWrapped=true)]
+    public partial class listarPorCaracter_CreadorRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://bibliows.biblioteca.syntaxerror.com/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string caracteres;
+        
+        public listarPorCaracter_CreadorRequest() {
+        }
+        
+        public listarPorCaracter_CreadorRequest(string caracteres) {
+            this.caracteres = caracteres;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPorCaracter_CreadorResponse", WrapperNamespace="http://bibliows.biblioteca.syntaxerror.com/", IsWrapped=true)]
+    public partial class listarPorCaracter_CreadorResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://bibliows.biblioteca.syntaxerror.com/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public WA_Prueba.MaterialWS.materialDTO[] @return;
+        
+        public listarPorCaracter_CreadorResponse() {
+        }
+        
+        public listarPorCaracter_CreadorResponse(WA_Prueba.MaterialWS.materialDTO[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarCreadoresPorMaterial", WrapperNamespace="http://bibliows.biblioteca.syntaxerror.com/", IsWrapped=true)]
+    public partial class listarCreadoresPorMaterialRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://bibliows.biblioteca.syntaxerror.com/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idMaterial;
+        
+        public listarCreadoresPorMaterialRequest() {
+        }
+        
+        public listarCreadoresPorMaterialRequest(int idMaterial) {
+            this.idMaterial = idMaterial;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarCreadoresPorMaterialResponse", WrapperNamespace="http://bibliows.biblioteca.syntaxerror.com/", IsWrapped=true)]
+    public partial class listarCreadoresPorMaterialResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://bibliows.biblioteca.syntaxerror.com/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public WA_Prueba.MaterialWS.creadorDTO[] @return;
+        
+        public listarCreadoresPorMaterialResponse() {
+        }
+        
+        public listarCreadoresPorMaterialResponse(WA_Prueba.MaterialWS.creadorDTO[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarEjemplaresMaterial", WrapperNamespace="http://bibliows.biblioteca.syntaxerror.com/", IsWrapped=true)]
+    public partial class listarEjemplaresMaterialRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://bibliows.biblioteca.syntaxerror.com/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idMaterial;
+        
+        public listarEjemplaresMaterialRequest() {
+        }
+        
+        public listarEjemplaresMaterialRequest(int idMaterial) {
+            this.idMaterial = idMaterial;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarEjemplaresMaterialResponse", WrapperNamespace="http://bibliows.biblioteca.syntaxerror.com/", IsWrapped=true)]
+    public partial class listarEjemplaresMaterialResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://bibliows.biblioteca.syntaxerror.com/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public WA_Prueba.MaterialWS.ejemplarDTO[] @return;
+        
+        public listarEjemplaresMaterialResponse() {
+        }
+        
+        public listarEjemplaresMaterialResponse(WA_Prueba.MaterialWS.ejemplarDTO[] @return) {
+            this.@return = @return;
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     public interface MaterialWSChannel : WA_Prueba.MaterialWS.MaterialWS, System.ServiceModel.IClientChannel {
     }
@@ -1185,49 +1353,80 @@ namespace WA_Prueba.MaterialWS {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WA_Prueba.MaterialWS.listarCreadoresPorMaterialResponse WA_Prueba.MaterialWS.MaterialWS.listarCreadoresPorMaterial(WA_Prueba.MaterialWS.listarCreadoresPorMaterialRequest request) {
-            return base.Channel.listarCreadoresPorMaterial(request);
+        WA_Prueba.MaterialWS.listarMaterialPorCaracteresResponse WA_Prueba.MaterialWS.MaterialWS.listarMaterialPorCaracteres(WA_Prueba.MaterialWS.listarMaterialPorCaracteresRequest request) {
+            return base.Channel.listarMaterialPorCaracteres(request);
         }
         
-        public WA_Prueba.MaterialWS.creadorDTO[] listarCreadoresPorMaterial(int idMaterial) {
-            WA_Prueba.MaterialWS.listarCreadoresPorMaterialRequest inValue = new WA_Prueba.MaterialWS.listarCreadoresPorMaterialRequest();
-            inValue.idMaterial = idMaterial;
-            WA_Prueba.MaterialWS.listarCreadoresPorMaterialResponse retVal = ((WA_Prueba.MaterialWS.MaterialWS)(this)).listarCreadoresPorMaterial(inValue);
+        public WA_Prueba.MaterialWS.materialDTO[] listarMaterialPorCaracteres(string caracteres) {
+            WA_Prueba.MaterialWS.listarMaterialPorCaracteresRequest inValue = new WA_Prueba.MaterialWS.listarMaterialPorCaracteresRequest();
+            inValue.caracteres = caracteres;
+            WA_Prueba.MaterialWS.listarMaterialPorCaracteresResponse retVal = ((WA_Prueba.MaterialWS.MaterialWS)(this)).listarMaterialPorCaracteres(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<WA_Prueba.MaterialWS.listarCreadoresPorMaterialResponse> WA_Prueba.MaterialWS.MaterialWS.listarCreadoresPorMaterialAsync(WA_Prueba.MaterialWS.listarCreadoresPorMaterialRequest request) {
-            return base.Channel.listarCreadoresPorMaterialAsync(request);
+        System.Threading.Tasks.Task<WA_Prueba.MaterialWS.listarMaterialPorCaracteresResponse> WA_Prueba.MaterialWS.MaterialWS.listarMaterialPorCaracteresAsync(WA_Prueba.MaterialWS.listarMaterialPorCaracteresRequest request) {
+            return base.Channel.listarMaterialPorCaracteresAsync(request);
         }
         
-        public System.Threading.Tasks.Task<WA_Prueba.MaterialWS.listarCreadoresPorMaterialResponse> listarCreadoresPorMaterialAsync(int idMaterial) {
-            WA_Prueba.MaterialWS.listarCreadoresPorMaterialRequest inValue = new WA_Prueba.MaterialWS.listarCreadoresPorMaterialRequest();
-            inValue.idMaterial = idMaterial;
-            return ((WA_Prueba.MaterialWS.MaterialWS)(this)).listarCreadoresPorMaterialAsync(inValue);
+        public System.Threading.Tasks.Task<WA_Prueba.MaterialWS.listarMaterialPorCaracteresResponse> listarMaterialPorCaracteresAsync(string caracteres) {
+            WA_Prueba.MaterialWS.listarMaterialPorCaracteresRequest inValue = new WA_Prueba.MaterialWS.listarMaterialPorCaracteresRequest();
+            inValue.caracteres = caracteres;
+            return ((WA_Prueba.MaterialWS.MaterialWS)(this)).listarMaterialPorCaracteresAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WA_Prueba.MaterialWS.listarEjemplaresMaterialResponse WA_Prueba.MaterialWS.MaterialWS.listarEjemplaresMaterial(WA_Prueba.MaterialWS.listarEjemplaresMaterialRequest request) {
-            return base.Channel.listarEjemplaresMaterial(request);
+        WA_Prueba.MaterialWS.insertarMaterialResponse WA_Prueba.MaterialWS.MaterialWS.insertarMaterial(WA_Prueba.MaterialWS.insertarMaterialRequest request) {
+            return base.Channel.insertarMaterial(request);
         }
         
-        public WA_Prueba.MaterialWS.ejemplarDTO[] listarEjemplaresMaterial(int idMaterial) {
-            WA_Prueba.MaterialWS.listarEjemplaresMaterialRequest inValue = new WA_Prueba.MaterialWS.listarEjemplaresMaterialRequest();
-            inValue.idMaterial = idMaterial;
-            WA_Prueba.MaterialWS.listarEjemplaresMaterialResponse retVal = ((WA_Prueba.MaterialWS.MaterialWS)(this)).listarEjemplaresMaterial(inValue);
+        public int insertarMaterial(string titulo, string edicion, WA_Prueba.MaterialWS.nivelDeIngles nivel, int anioPublicacion, string portada, int idEditorial) {
+            WA_Prueba.MaterialWS.insertarMaterialRequest inValue = new WA_Prueba.MaterialWS.insertarMaterialRequest();
+            inValue.titulo = titulo;
+            inValue.edicion = edicion;
+            inValue.nivel = nivel;
+            inValue.anioPublicacion = anioPublicacion;
+            inValue.portada = portada;
+            inValue.idEditorial = idEditorial;
+            WA_Prueba.MaterialWS.insertarMaterialResponse retVal = ((WA_Prueba.MaterialWS.MaterialWS)(this)).insertarMaterial(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<WA_Prueba.MaterialWS.listarEjemplaresMaterialResponse> WA_Prueba.MaterialWS.MaterialWS.listarEjemplaresMaterialAsync(WA_Prueba.MaterialWS.listarEjemplaresMaterialRequest request) {
-            return base.Channel.listarEjemplaresMaterialAsync(request);
+        System.Threading.Tasks.Task<WA_Prueba.MaterialWS.insertarMaterialResponse> WA_Prueba.MaterialWS.MaterialWS.insertarMaterialAsync(WA_Prueba.MaterialWS.insertarMaterialRequest request) {
+            return base.Channel.insertarMaterialAsync(request);
         }
         
-        public System.Threading.Tasks.Task<WA_Prueba.MaterialWS.listarEjemplaresMaterialResponse> listarEjemplaresMaterialAsync(int idMaterial) {
-            WA_Prueba.MaterialWS.listarEjemplaresMaterialRequest inValue = new WA_Prueba.MaterialWS.listarEjemplaresMaterialRequest();
-            inValue.idMaterial = idMaterial;
-            return ((WA_Prueba.MaterialWS.MaterialWS)(this)).listarEjemplaresMaterialAsync(inValue);
+        public System.Threading.Tasks.Task<WA_Prueba.MaterialWS.insertarMaterialResponse> insertarMaterialAsync(string titulo, string edicion, WA_Prueba.MaterialWS.nivelDeIngles nivel, int anioPublicacion, string portada, int idEditorial) {
+            WA_Prueba.MaterialWS.insertarMaterialRequest inValue = new WA_Prueba.MaterialWS.insertarMaterialRequest();
+            inValue.titulo = titulo;
+            inValue.edicion = edicion;
+            inValue.nivel = nivel;
+            inValue.anioPublicacion = anioPublicacion;
+            inValue.portada = portada;
+            inValue.idEditorial = idEditorial;
+            return ((WA_Prueba.MaterialWS.MaterialWS)(this)).insertarMaterialAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WA_Prueba.MaterialWS.listarTodosResponse WA_Prueba.MaterialWS.MaterialWS.listarTodos(WA_Prueba.MaterialWS.listarTodosRequest request) {
+            return base.Channel.listarTodos(request);
+        }
+        
+        public WA_Prueba.MaterialWS.materialDTO[] listarTodos() {
+            WA_Prueba.MaterialWS.listarTodosRequest inValue = new WA_Prueba.MaterialWS.listarTodosRequest();
+            WA_Prueba.MaterialWS.listarTodosResponse retVal = ((WA_Prueba.MaterialWS.MaterialWS)(this)).listarTodos(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<WA_Prueba.MaterialWS.listarTodosResponse> WA_Prueba.MaterialWS.MaterialWS.listarTodosAsync(WA_Prueba.MaterialWS.listarTodosRequest request) {
+            return base.Channel.listarTodosAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<WA_Prueba.MaterialWS.listarTodosResponse> listarTodosAsync() {
+            WA_Prueba.MaterialWS.listarTodosRequest inValue = new WA_Prueba.MaterialWS.listarTodosRequest();
+            return ((WA_Prueba.MaterialWS.MaterialWS)(this)).listarTodosAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -1251,27 +1450,6 @@ namespace WA_Prueba.MaterialWS {
             WA_Prueba.MaterialWS.obtenerPorIdRequest inValue = new WA_Prueba.MaterialWS.obtenerPorIdRequest();
             inValue.idMaterial = idMaterial;
             return ((WA_Prueba.MaterialWS.MaterialWS)(this)).obtenerPorIdAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WA_Prueba.MaterialWS.listarTodosResponse WA_Prueba.MaterialWS.MaterialWS.listarTodos(WA_Prueba.MaterialWS.listarTodosRequest request) {
-            return base.Channel.listarTodos(request);
-        }
-        
-        public WA_Prueba.MaterialWS.materialDTO[] listarTodos() {
-            WA_Prueba.MaterialWS.listarTodosRequest inValue = new WA_Prueba.MaterialWS.listarTodosRequest();
-            WA_Prueba.MaterialWS.listarTodosResponse retVal = ((WA_Prueba.MaterialWS.MaterialWS)(this)).listarTodos(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<WA_Prueba.MaterialWS.listarTodosResponse> WA_Prueba.MaterialWS.MaterialWS.listarTodosAsync(WA_Prueba.MaterialWS.listarTodosRequest request) {
-            return base.Channel.listarTodosAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<WA_Prueba.MaterialWS.listarTodosResponse> listarTodosAsync() {
-            WA_Prueba.MaterialWS.listarTodosRequest inValue = new WA_Prueba.MaterialWS.listarTodosRequest();
-            return ((WA_Prueba.MaterialWS.MaterialWS)(this)).listarTodosAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -1330,6 +1508,75 @@ namespace WA_Prueba.MaterialWS {
             WA_Prueba.MaterialWS.eliminarMaterialRequest inValue = new WA_Prueba.MaterialWS.eliminarMaterialRequest();
             inValue.idMaterial = idMaterial;
             return ((WA_Prueba.MaterialWS.MaterialWS)(this)).eliminarMaterialAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WA_Prueba.MaterialWS.listarPorCaracter_CreadorResponse WA_Prueba.MaterialWS.MaterialWS.listarPorCaracter_Creador(WA_Prueba.MaterialWS.listarPorCaracter_CreadorRequest request) {
+            return base.Channel.listarPorCaracter_Creador(request);
+        }
+        
+        public WA_Prueba.MaterialWS.materialDTO[] listarPorCaracter_Creador(string caracteres) {
+            WA_Prueba.MaterialWS.listarPorCaracter_CreadorRequest inValue = new WA_Prueba.MaterialWS.listarPorCaracter_CreadorRequest();
+            inValue.caracteres = caracteres;
+            WA_Prueba.MaterialWS.listarPorCaracter_CreadorResponse retVal = ((WA_Prueba.MaterialWS.MaterialWS)(this)).listarPorCaracter_Creador(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<WA_Prueba.MaterialWS.listarPorCaracter_CreadorResponse> WA_Prueba.MaterialWS.MaterialWS.listarPorCaracter_CreadorAsync(WA_Prueba.MaterialWS.listarPorCaracter_CreadorRequest request) {
+            return base.Channel.listarPorCaracter_CreadorAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<WA_Prueba.MaterialWS.listarPorCaracter_CreadorResponse> listarPorCaracter_CreadorAsync(string caracteres) {
+            WA_Prueba.MaterialWS.listarPorCaracter_CreadorRequest inValue = new WA_Prueba.MaterialWS.listarPorCaracter_CreadorRequest();
+            inValue.caracteres = caracteres;
+            return ((WA_Prueba.MaterialWS.MaterialWS)(this)).listarPorCaracter_CreadorAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WA_Prueba.MaterialWS.listarCreadoresPorMaterialResponse WA_Prueba.MaterialWS.MaterialWS.listarCreadoresPorMaterial(WA_Prueba.MaterialWS.listarCreadoresPorMaterialRequest request) {
+            return base.Channel.listarCreadoresPorMaterial(request);
+        }
+        
+        public WA_Prueba.MaterialWS.creadorDTO[] listarCreadoresPorMaterial(int idMaterial) {
+            WA_Prueba.MaterialWS.listarCreadoresPorMaterialRequest inValue = new WA_Prueba.MaterialWS.listarCreadoresPorMaterialRequest();
+            inValue.idMaterial = idMaterial;
+            WA_Prueba.MaterialWS.listarCreadoresPorMaterialResponse retVal = ((WA_Prueba.MaterialWS.MaterialWS)(this)).listarCreadoresPorMaterial(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<WA_Prueba.MaterialWS.listarCreadoresPorMaterialResponse> WA_Prueba.MaterialWS.MaterialWS.listarCreadoresPorMaterialAsync(WA_Prueba.MaterialWS.listarCreadoresPorMaterialRequest request) {
+            return base.Channel.listarCreadoresPorMaterialAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<WA_Prueba.MaterialWS.listarCreadoresPorMaterialResponse> listarCreadoresPorMaterialAsync(int idMaterial) {
+            WA_Prueba.MaterialWS.listarCreadoresPorMaterialRequest inValue = new WA_Prueba.MaterialWS.listarCreadoresPorMaterialRequest();
+            inValue.idMaterial = idMaterial;
+            return ((WA_Prueba.MaterialWS.MaterialWS)(this)).listarCreadoresPorMaterialAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WA_Prueba.MaterialWS.listarEjemplaresMaterialResponse WA_Prueba.MaterialWS.MaterialWS.listarEjemplaresMaterial(WA_Prueba.MaterialWS.listarEjemplaresMaterialRequest request) {
+            return base.Channel.listarEjemplaresMaterial(request);
+        }
+        
+        public WA_Prueba.MaterialWS.ejemplarDTO[] listarEjemplaresMaterial(int idMaterial) {
+            WA_Prueba.MaterialWS.listarEjemplaresMaterialRequest inValue = new WA_Prueba.MaterialWS.listarEjemplaresMaterialRequest();
+            inValue.idMaterial = idMaterial;
+            WA_Prueba.MaterialWS.listarEjemplaresMaterialResponse retVal = ((WA_Prueba.MaterialWS.MaterialWS)(this)).listarEjemplaresMaterial(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<WA_Prueba.MaterialWS.listarEjemplaresMaterialResponse> WA_Prueba.MaterialWS.MaterialWS.listarEjemplaresMaterialAsync(WA_Prueba.MaterialWS.listarEjemplaresMaterialRequest request) {
+            return base.Channel.listarEjemplaresMaterialAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<WA_Prueba.MaterialWS.listarEjemplaresMaterialResponse> listarEjemplaresMaterialAsync(int idMaterial) {
+            WA_Prueba.MaterialWS.listarEjemplaresMaterialRequest inValue = new WA_Prueba.MaterialWS.listarEjemplaresMaterialRequest();
+            inValue.idMaterial = idMaterial;
+            return ((WA_Prueba.MaterialWS.MaterialWS)(this)).listarEjemplaresMaterialAsync(inValue);
         }
     }
 }

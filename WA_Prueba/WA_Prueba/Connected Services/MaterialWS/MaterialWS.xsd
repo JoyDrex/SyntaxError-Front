@@ -2,16 +2,37 @@
 <xs:schema xmlns:tns="http://bibliows.biblioteca.syntaxerror.com/" targetNamespace="http://bibliows.biblioteca.syntaxerror.com/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:element name="eliminarMaterial" type="tns:eliminarMaterial" />
   <xs:element name="eliminarMaterialResponse" type="tns:eliminarMaterialResponse" />
+  <xs:element name="insertarMaterial" type="tns:insertarMaterial" />
+  <xs:element name="insertarMaterialResponse" type="tns:insertarMaterialResponse" />
   <xs:element name="listarCreadoresPorMaterial" type="tns:listarCreadoresPorMaterial" />
   <xs:element name="listarCreadoresPorMaterialResponse" type="tns:listarCreadoresPorMaterialResponse" />
   <xs:element name="listarEjemplaresMaterial" type="tns:listarEjemplaresMaterial" />
   <xs:element name="listarEjemplaresMaterialResponse" type="tns:listarEjemplaresMaterialResponse" />
+  <xs:element name="listarMaterialPorCaracteres" type="tns:listarMaterialPorCaracteres" />
+  <xs:element name="listarMaterialPorCaracteresResponse" type="tns:listarMaterialPorCaracteresResponse" />
+  <xs:element name="listarPorCaracter_Creador" type="tns:listarPorCaracter_Creador" />
+  <xs:element name="listarPorCaracter_CreadorResponse" type="tns:listarPorCaracter_CreadorResponse" />
   <xs:element name="listarTodos" type="tns:listarTodos" />
   <xs:element name="listarTodosResponse" type="tns:listarTodosResponse" />
   <xs:element name="modificarMaterial" type="tns:modificarMaterial" />
   <xs:element name="modificarMaterialResponse" type="tns:modificarMaterialResponse" />
   <xs:element name="obtenerPorId" type="tns:obtenerPorId" />
   <xs:element name="obtenerPorIdResponse" type="tns:obtenerPorIdResponse" />
+  <xs:complexType name="insertarMaterial">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="titulo" type="xs:string" />
+      <xs:element minOccurs="0" name="edicion" type="xs:string" />
+      <xs:element minOccurs="0" name="nivel" type="tns:nivelDeIngles" />
+      <xs:element minOccurs="0" name="anioPublicacion" type="xs:int" />
+      <xs:element minOccurs="0" name="portada" type="xs:string" />
+      <xs:element minOccurs="0" name="idEditorial" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertarMaterialResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
   <xs:complexType name="listarTodos">
     <xs:sequence />
   </xs:complexType>
@@ -57,6 +78,16 @@
   <xs:complexType name="eliminarMaterialResponse">
     <xs:sequence>
       <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarMaterialPorCaracteres">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="caracteres" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarMaterialPorCaracteresResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:materialDTO" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="listarCreadoresPorMaterial">
@@ -128,6 +159,16 @@
   <xs:complexType name="modificarMaterialResponse">
     <xs:sequence>
       <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarPorCaracter_Creador">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="caracteres" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarPorCaracter_CreadorResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:materialDTO" />
     </xs:sequence>
   </xs:complexType>
   <xs:simpleType name="nivelDeIngles">

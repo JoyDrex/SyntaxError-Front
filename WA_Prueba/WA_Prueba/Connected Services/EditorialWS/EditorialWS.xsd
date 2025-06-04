@@ -49,16 +49,6 @@
       <xs:element minOccurs="0" name="return" type="tns:editorialDTO" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="eliminarEditorial">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="idEditorial" type="xs:int" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="eliminarEditorialResponse">
-    <xs:sequence>
-      <xs:element name="return" type="xs:int" />
-    </xs:sequence>
-  </xs:complexType>
   <xs:complexType name="insertarEditorial">
     <xs:sequence>
       <xs:element minOccurs="0" name="nombre" type="xs:string" />
@@ -67,6 +57,16 @@
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="insertarEditorialResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarEditorial">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idEditorial" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarEditorialResponse">
     <xs:sequence>
       <xs:element name="return" type="xs:int" />
     </xs:sequence>

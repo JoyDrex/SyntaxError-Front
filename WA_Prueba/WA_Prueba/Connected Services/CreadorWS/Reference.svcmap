@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="97b638d7-2750-48b8-a0da-aba1291cbbc0" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="e3c77fc6-088f-423e-ba8f-a0819bb94d37" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -19,11 +19,11 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:8080/BiblioWS/CreadorWS?wsdl" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://localhost:8080/myholywrapper/CreadorWS?wsdl" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="CreadorWS.xsd" MetadataType="Schema" ID="e8b3490c-5d50-4dba-9ce9-98db37d410d6" SourceId="1" SourceUrl="http://localhost:8080/BiblioWS/CreadorWS?xsd=1" />
-    <MetadataFile FileName="CreadorWS.wsdl" MetadataType="Wsdl" ID="41e38902-4052-405e-a5c5-2ec4e40ff1cf" SourceId="1" SourceUrl="http://localhost:8080/BiblioWS/CreadorWS?wsdl" />
+    <MetadataFile FileName="CreadorWS.wsdl" MetadataType="Wsdl" ID="fbc9c606-2a28-4638-9880-876c84792893" SourceId="1" SourceUrl="http://localhost:8080/myholywrapper/CreadorWS?wsdl" />
+    <MetadataFile FileName="CreadorWS.xsd" MetadataType="Schema" ID="d5b87d81-31ee-470c-8ec8-7a807c1c4bd9" SourceId="1" SourceUrl="http://localhost:8080/myholywrapper/CreadorWS?xsd=1" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

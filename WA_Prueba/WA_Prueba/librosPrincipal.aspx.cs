@@ -93,12 +93,21 @@ namespace WA_Prueba
 
                 if (ejemplares != null && ejemplares.Any())
                 {
-                    string html = "<ul>";
+                    string html = "";
                     foreach (var ej in ejemplares)
                     {
-                        html += $"<li>{ej.idEjemplar} - {ej.disponible}</li>";
+                        // Supongo que ej tiene las propiedades: idEjemplar, fechaAdquirido, disponible, tipo, formatoDigital, ubicacion
+                        html +=
+                           "<div class='fila no-clickable'>" +
+                                $"<span><strong>CÓDIGO:</strong> {ej.idEjemplar.ToString("D3")}</span>" +
+                                $"<span><strong>FECHA ADQUIRIDO:</strong> {ej.fechaAdquisicion.ToString("dd/MM/yyyy")}</span>" +
+                                $"<span><strong>DISPONIBILIDAD:</strong> {(ej.disponible ? "<strong>SI</strong>" : "<strong>NO</strong>")}</span>" +
+                                $"<span><strong>TIPO:</strong> {ej.tipo}</span>" +
+                                $"<span><strong>FORMATO DIGITAL:</strong> {(ej.formatoDigital != null ? ej.formatoDigital.ToString() : "-")}</span>" +
+                                $"<span><strong>UBICACIÓN:</strong> {ej.ubicacion}</span>" +
+                            "</div>";
+
                     }
-                    html += "</ul>";
 
                     litEjemplares.Text = html;
                 }
