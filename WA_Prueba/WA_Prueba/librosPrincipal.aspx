@@ -9,16 +9,27 @@
             justify-content: space-between; /* Alinea los contenedores a los extremos de la pantalla */
             margin-top: 20px;
             width: 100%;
-            height: 100vh;
+            height: 70vh;
         }
 
         .left-container {
-            width: 60%; /* Ajustado para la tabla */
-            display: block;
-            flex-direction: column;
-            align-items: flex-start; /* Mantiene la tabla alineada a la izquierda */
-            height: 100%;
+            width: 50%;
+            flex-shrink: 0;       /* No se reduce */
+            padding-right: 10px;  /* Espacio interno para que no pegue al borde */
+            box-sizing: border-box; /* Para que el padding no aumente el ancho */
         }
+
+        #divEjemplares {
+            width: 50%;
+            flex-shrink: 0;
+            overflow-y: auto;
+            padding-left: 10px;    /* Separación interna */
+            box-sizing: border-box;
+            background: white;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+        
         .table-container {
             width: 100%;
             margin-top: 20px;
@@ -170,15 +181,32 @@
             text-decoration: none;
             cursor: pointer;
         }
+
         .filas-desplegables .fila {
-            background-color: #f2f2f2; /* Fondo gris */
-            padding: 10px;
-            margin-bottom: 5px;
+            background-color: #f2f2f2;
+            padding: 10px 20px;
+            margin-bottom: 10px;
+            border-radius: 5px;
             cursor: default;
             display: flex;
-            justify-content: space-between;
+            flex-wrap: wrap;  /* Para que se acomoden en varias líneas si es necesario */
+            gap: 12px 25px;   /* Espacio vertical y horizontal entre spans */
             align-items: center;
-            position: relative; /* Mantiene la fila en una posición fija mientras se despliega la información */
+        }
+
+        .filas-desplegables .fila div {
+            font-size: 14px;
+        }
+
+        .filas-desplegables .fila span strong {
+            font-weight: 700;
+            margin-right: 6px;
+        }
+
+        .filas-desplegables hr {
+            border: 0;
+            border-top: 1px solid #ccc;
+            margin: 10px 0;
         }
 
         .filas-desplegables .fila.clickable {
@@ -202,17 +230,33 @@
         }
 
         .filas-desplegables .fila span {
-            display: inline-block;
-            max-width: 200px; /* Limita el ancho del texto */
+            font-size: 14px;
+            max-width: 70%; /* Aumentamos el ancho máximo */
+            white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
+            margin-right: 25px;
         }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 15px; /* espacio entre título y botón */
+            margin-bottom: 10px;
+        }
+
+        .header-left h2 {
+            margin: 0;
+        }
+
     </style>
 
 <div class="main-container">
         <!-- Contenedor de la tabla -->
         <div class="left-container">
             <h2>Biblioteca digital</h2>
+            <asp:Button ID="btnAgregarMaterial" runat="server" Text="Agregar Nuevo Material" CssClass="action-button" OnClientClick="window.location.href='InsertarMaterial.aspx'; return false;" />
             <div class="table-container">
                 <asp:GridView ID="dgvLibros" runat="server" AllowPaging="false" AutoGenerateColumns="false" CssClass="table table-hover table-responsive table-striped" OnRowCommand="dgvLibros_RowCommand">
                     <Columns>
@@ -227,7 +271,6 @@
                     </Columns>
                 </asp:GridView>
             </div>
-            <asp:Button ID="btnAgregarMaterial" runat="server" Text="Agregar Nuevo Material" CssClass="action-button" OnClientClick="window.location.href='InsertarMaterial.aspx'; return false;" />
         </div>
 
         <!-- Sección de detalles del libro -->
@@ -284,9 +327,9 @@
             <p><strong>USUARIOS EN LÍNEA</strong></p>
             <p>123</p>
         </div>
-        <div id="divEjemplares" runat="server" style="display:none; margin-top:20px;">
-        <asp:Literal ID="litEjemplares" runat="server"></asp:Literal>
-    </div>
+        <div id="divEjemplares" runat="server" class="filas-desplegables" style="display:none;">
+            <asp:Literal ID="litEjemplares" runat="server"></asp:Literal>
+        </div>
     </div>
 
     <div id="modalConfirmacion" class="modal">

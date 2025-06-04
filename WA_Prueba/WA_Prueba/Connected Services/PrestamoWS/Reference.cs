@@ -16,51 +16,6 @@ namespace WA_Prueba.PrestamoWS {
     public interface PrestamoWS {
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/eliminarPrestamoRequest", ReplyAction="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/eliminarPrestamoResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        WA_Prueba.PrestamoWS.eliminarPrestamoResponse eliminarPrestamo(WA_Prueba.PrestamoWS.eliminarPrestamoRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/eliminarPrestamoRequest", ReplyAction="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/eliminarPrestamoResponse")]
-        System.Threading.Tasks.Task<WA_Prueba.PrestamoWS.eliminarPrestamoResponse> eliminarPrestamoAsync(WA_Prueba.PrestamoWS.eliminarPrestamoRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/insertarPrestamoRequest", ReplyAction="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/insertarPrestamoResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        WA_Prueba.PrestamoWS.insertarPrestamoResponse insertarPrestamo(WA_Prueba.PrestamoWS.insertarPrestamoRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/insertarPrestamoRequest", ReplyAction="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/insertarPrestamoResponse")]
-        System.Threading.Tasks.Task<WA_Prueba.PrestamoWS.insertarPrestamoResponse> insertarPrestamoAsync(WA_Prueba.PrestamoWS.insertarPrestamoRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/obtenerPrestamoRequest", ReplyAction="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/obtenerPrestamoResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        WA_Prueba.PrestamoWS.obtenerPrestamoResponse obtenerPrestamo(WA_Prueba.PrestamoWS.obtenerPrestamoRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/obtenerPrestamoRequest", ReplyAction="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/obtenerPrestamoResponse")]
-        System.Threading.Tasks.Task<WA_Prueba.PrestamoWS.obtenerPrestamoResponse> obtenerPrestamoAsync(WA_Prueba.PrestamoWS.obtenerPrestamoRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/listarPrestamosRequest", ReplyAction="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/listarPrestamosResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        WA_Prueba.PrestamoWS.listarPrestamosResponse listarPrestamos(WA_Prueba.PrestamoWS.listarPrestamosRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/listarPrestamosRequest", ReplyAction="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/listarPrestamosResponse")]
-        System.Threading.Tasks.Task<WA_Prueba.PrestamoWS.listarPrestamosResponse> listarPrestamosAsync(WA_Prueba.PrestamoWS.listarPrestamosRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/modificarPrestamoRequest", ReplyAction="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/modificarPrestamoResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        WA_Prueba.PrestamoWS.modificarPrestamoResponse modificarPrestamo(WA_Prueba.PrestamoWS.modificarPrestamoRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/modificarPrestamoRequest", ReplyAction="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/modificarPrestamoResponse")]
-        System.Threading.Tasks.Task<WA_Prueba.PrestamoWS.modificarPrestamoResponse> modificarPrestamoAsync(WA_Prueba.PrestamoWS.modificarPrestamoRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/contarPrestamosActivosReque" +
             "st", ReplyAction="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/contarPrestamosActivosRespo" +
             "nse")]
@@ -72,6 +27,19 @@ namespace WA_Prueba.PrestamoWS {
             "st", ReplyAction="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/contarPrestamosActivosRespo" +
             "nse")]
         System.Threading.Tasks.Task<WA_Prueba.PrestamoWS.contarPrestamosActivosResponse> contarPrestamosActivosAsync(WA_Prueba.PrestamoWS.contarPrestamosActivosRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/contarPrestamosAtrasadosReq" +
+            "uest", ReplyAction="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/contarPrestamosAtrasadosRes" +
+            "ponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        WA_Prueba.PrestamoWS.contarPrestamosAtrasadosResponse contarPrestamosAtrasados(WA_Prueba.PrestamoWS.contarPrestamosAtrasadosRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/contarPrestamosAtrasadosReq" +
+            "uest", ReplyAction="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/contarPrestamosAtrasadosRes" +
+            "ponse")]
+        System.Threading.Tasks.Task<WA_Prueba.PrestamoWS.contarPrestamosAtrasadosResponse> contarPrestamosAtrasadosAsync(WA_Prueba.PrestamoWS.contarPrestamosAtrasadosRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/contarPrestamosPorMaterialR" +
@@ -87,51 +55,155 @@ namespace WA_Prueba.PrestamoWS {
         System.Threading.Tasks.Task<WA_Prueba.PrestamoWS.contarPrestamosPorMaterialResponse> contarPrestamosPorMaterialAsync(WA_Prueba.PrestamoWS.contarPrestamosPorMaterialRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/contarPrestamosAtrasadosReq" +
-            "uest", ReplyAction="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/contarPrestamosAtrasadosRes" +
-            "ponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/insertarPrestamoRequest", ReplyAction="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/insertarPrestamoResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        WA_Prueba.PrestamoWS.contarPrestamosAtrasadosResponse contarPrestamosAtrasados(WA_Prueba.PrestamoWS.contarPrestamosAtrasadosRequest request);
+        WA_Prueba.PrestamoWS.insertarPrestamoResponse insertarPrestamo(WA_Prueba.PrestamoWS.insertarPrestamoRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/contarPrestamosAtrasadosReq" +
-            "uest", ReplyAction="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/contarPrestamosAtrasadosRes" +
-            "ponse")]
-        System.Threading.Tasks.Task<WA_Prueba.PrestamoWS.contarPrestamosAtrasadosResponse> contarPrestamosAtrasadosAsync(WA_Prueba.PrestamoWS.contarPrestamosAtrasadosRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/insertarPrestamoRequest", ReplyAction="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/insertarPrestamoResponse")]
+        System.Threading.Tasks.Task<WA_Prueba.PrestamoWS.insertarPrestamoResponse> insertarPrestamoAsync(WA_Prueba.PrestamoWS.insertarPrestamoRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/listarPrestamosRequest", ReplyAction="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/listarPrestamosResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        WA_Prueba.PrestamoWS.listarPrestamosResponse listarPrestamos(WA_Prueba.PrestamoWS.listarPrestamosRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/listarPrestamosRequest", ReplyAction="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/listarPrestamosResponse")]
+        System.Threading.Tasks.Task<WA_Prueba.PrestamoWS.listarPrestamosResponse> listarPrestamosAsync(WA_Prueba.PrestamoWS.listarPrestamosRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/obtenerPrestamoRequest", ReplyAction="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/obtenerPrestamoResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        WA_Prueba.PrestamoWS.obtenerPrestamoResponse obtenerPrestamo(WA_Prueba.PrestamoWS.obtenerPrestamoRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/obtenerPrestamoRequest", ReplyAction="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/obtenerPrestamoResponse")]
+        System.Threading.Tasks.Task<WA_Prueba.PrestamoWS.obtenerPrestamoResponse> obtenerPrestamoAsync(WA_Prueba.PrestamoWS.obtenerPrestamoRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/eliminarPrestamoRequest", ReplyAction="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/eliminarPrestamoResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        WA_Prueba.PrestamoWS.eliminarPrestamoResponse eliminarPrestamo(WA_Prueba.PrestamoWS.eliminarPrestamoRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/eliminarPrestamoRequest", ReplyAction="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/eliminarPrestamoResponse")]
+        System.Threading.Tasks.Task<WA_Prueba.PrestamoWS.eliminarPrestamoResponse> eliminarPrestamoAsync(WA_Prueba.PrestamoWS.eliminarPrestamoRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/modificarPrestamoRequest", ReplyAction="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/modificarPrestamoResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        WA_Prueba.PrestamoWS.modificarPrestamoResponse modificarPrestamo(WA_Prueba.PrestamoWS.modificarPrestamoRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/modificarPrestamoRequest", ReplyAction="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/modificarPrestamoResponse")]
+        System.Threading.Tasks.Task<WA_Prueba.PrestamoWS.modificarPrestamoResponse> modificarPrestamoAsync(WA_Prueba.PrestamoWS.modificarPrestamoRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarPrestamo", WrapperNamespace="http://bibliows.biblioteca.syntaxerror.com/", IsWrapped=true)]
-    public partial class eliminarPrestamoRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="contarPrestamosActivos", WrapperNamespace="http://bibliows.biblioteca.syntaxerror.com/", IsWrapped=true)]
+    public partial class contarPrestamosActivosRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://bibliows.biblioteca.syntaxerror.com/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idPrestamo;
+        public int idUsuario;
         
-        public eliminarPrestamoRequest() {
+        public contarPrestamosActivosRequest() {
         }
         
-        public eliminarPrestamoRequest(int idPrestamo) {
-            this.idPrestamo = idPrestamo;
+        public contarPrestamosActivosRequest(int idUsuario) {
+            this.idUsuario = idUsuario;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarPrestamoResponse", WrapperNamespace="http://bibliows.biblioteca.syntaxerror.com/", IsWrapped=true)]
-    public partial class eliminarPrestamoResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="contarPrestamosActivosResponse", WrapperNamespace="http://bibliows.biblioteca.syntaxerror.com/", IsWrapped=true)]
+    public partial class contarPrestamosActivosResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://bibliows.biblioteca.syntaxerror.com/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public int @return;
         
-        public eliminarPrestamoResponse() {
+        public contarPrestamosActivosResponse() {
         }
         
-        public eliminarPrestamoResponse(int @return) {
+        public contarPrestamosActivosResponse(int @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="contarPrestamosAtrasados", WrapperNamespace="http://bibliows.biblioteca.syntaxerror.com/", IsWrapped=true)]
+    public partial class contarPrestamosAtrasadosRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://bibliows.biblioteca.syntaxerror.com/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idUsuario;
+        
+        public contarPrestamosAtrasadosRequest() {
+        }
+        
+        public contarPrestamosAtrasadosRequest(int idUsuario) {
+            this.idUsuario = idUsuario;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="contarPrestamosAtrasadosResponse", WrapperNamespace="http://bibliows.biblioteca.syntaxerror.com/", IsWrapped=true)]
+    public partial class contarPrestamosAtrasadosResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://bibliows.biblioteca.syntaxerror.com/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int @return;
+        
+        public contarPrestamosAtrasadosResponse() {
+        }
+        
+        public contarPrestamosAtrasadosResponse(int @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="contarPrestamosPorMaterial", WrapperNamespace="http://bibliows.biblioteca.syntaxerror.com/", IsWrapped=true)]
+    public partial class contarPrestamosPorMaterialRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://bibliows.biblioteca.syntaxerror.com/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idMaterial;
+        
+        public contarPrestamosPorMaterialRequest() {
+        }
+        
+        public contarPrestamosPorMaterialRequest(int idMaterial) {
+            this.idMaterial = idMaterial;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="contarPrestamosPorMaterialResponse", WrapperNamespace="http://bibliows.biblioteca.syntaxerror.com/", IsWrapped=true)]
+    public partial class contarPrestamosPorMaterialResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://bibliows.biblioteca.syntaxerror.com/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int @return;
+        
+        public contarPrestamosPorMaterialResponse() {
+        }
+        
+        public contarPrestamosPorMaterialResponse(int @return) {
             this.@return = @return;
         }
     }
@@ -188,7 +260,7 @@ namespace WA_Prueba.PrestamoWS {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -332,7 +404,7 @@ namespace WA_Prueba.PrestamoWS {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -658,7 +730,7 @@ namespace WA_Prueba.PrestamoWS {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://bibliows.biblioteca.syntaxerror.com/")]
     public enum nivelDeIngles {
@@ -674,7 +746,7 @@ namespace WA_Prueba.PrestamoWS {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -818,7 +890,7 @@ namespace WA_Prueba.PrestamoWS {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://bibliows.biblioteca.syntaxerror.com/")]
     public enum tipoPersona {
@@ -831,13 +903,13 @@ namespace WA_Prueba.PrestamoWS {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://bibliows.biblioteca.syntaxerror.com/")]
     public enum turnos {
         
         /// <remarks/>
-        MAÑANA,
+        MANHANA,
         
         /// <remarks/>
         TARDE,
@@ -847,6 +919,34 @@ namespace WA_Prueba.PrestamoWS {
         
         /// <remarks/>
         FULLTIME,
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPrestamos", WrapperNamespace="http://bibliows.biblioteca.syntaxerror.com/", IsWrapped=true)]
+    public partial class listarPrestamosRequest {
+        
+        public listarPrestamosRequest() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPrestamosResponse", WrapperNamespace="http://bibliows.biblioteca.syntaxerror.com/", IsWrapped=true)]
+    public partial class listarPrestamosResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://bibliows.biblioteca.syntaxerror.com/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public WA_Prueba.PrestamoWS.prestamoDTO[] @return;
+        
+        public listarPrestamosResponse() {
+        }
+        
+        public listarPrestamosResponse(WA_Prueba.PrestamoWS.prestamoDTO[] @return) {
+            this.@return = @return;
+        }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -888,27 +988,35 @@ namespace WA_Prueba.PrestamoWS {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPrestamos", WrapperNamespace="http://bibliows.biblioteca.syntaxerror.com/", IsWrapped=true)]
-    public partial class listarPrestamosRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarPrestamo", WrapperNamespace="http://bibliows.biblioteca.syntaxerror.com/", IsWrapped=true)]
+    public partial class eliminarPrestamoRequest {
         
-        public listarPrestamosRequest() {
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://bibliows.biblioteca.syntaxerror.com/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idPrestamo;
+        
+        public eliminarPrestamoRequest() {
+        }
+        
+        public eliminarPrestamoRequest(int idPrestamo) {
+            this.idPrestamo = idPrestamo;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPrestamosResponse", WrapperNamespace="http://bibliows.biblioteca.syntaxerror.com/", IsWrapped=true)]
-    public partial class listarPrestamosResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarPrestamoResponse", WrapperNamespace="http://bibliows.biblioteca.syntaxerror.com/", IsWrapped=true)]
+    public partial class eliminarPrestamoResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://bibliows.biblioteca.syntaxerror.com/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public WA_Prueba.PrestamoWS.prestamoDTO[] @return;
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int @return;
         
-        public listarPrestamosResponse() {
+        public eliminarPrestamoResponse() {
         }
         
-        public listarPrestamosResponse(WA_Prueba.PrestamoWS.prestamoDTO[] @return) {
+        public eliminarPrestamoResponse(int @return) {
             this.@return = @return;
         }
     }
@@ -969,114 +1077,6 @@ namespace WA_Prueba.PrestamoWS {
         }
     }
     
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="contarPrestamosActivos", WrapperNamespace="http://bibliows.biblioteca.syntaxerror.com/", IsWrapped=true)]
-    public partial class contarPrestamosActivosRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://bibliows.biblioteca.syntaxerror.com/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idUsuario;
-        
-        public contarPrestamosActivosRequest() {
-        }
-        
-        public contarPrestamosActivosRequest(int idUsuario) {
-            this.idUsuario = idUsuario;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="contarPrestamosActivosResponse", WrapperNamespace="http://bibliows.biblioteca.syntaxerror.com/", IsWrapped=true)]
-    public partial class contarPrestamosActivosResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://bibliows.biblioteca.syntaxerror.com/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int @return;
-        
-        public contarPrestamosActivosResponse() {
-        }
-        
-        public contarPrestamosActivosResponse(int @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="contarPrestamosPorMaterial", WrapperNamespace="http://bibliows.biblioteca.syntaxerror.com/", IsWrapped=true)]
-    public partial class contarPrestamosPorMaterialRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://bibliows.biblioteca.syntaxerror.com/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idMaterial;
-        
-        public contarPrestamosPorMaterialRequest() {
-        }
-        
-        public contarPrestamosPorMaterialRequest(int idMaterial) {
-            this.idMaterial = idMaterial;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="contarPrestamosPorMaterialResponse", WrapperNamespace="http://bibliows.biblioteca.syntaxerror.com/", IsWrapped=true)]
-    public partial class contarPrestamosPorMaterialResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://bibliows.biblioteca.syntaxerror.com/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int @return;
-        
-        public contarPrestamosPorMaterialResponse() {
-        }
-        
-        public contarPrestamosPorMaterialResponse(int @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="contarPrestamosAtrasados", WrapperNamespace="http://bibliows.biblioteca.syntaxerror.com/", IsWrapped=true)]
-    public partial class contarPrestamosAtrasadosRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://bibliows.biblioteca.syntaxerror.com/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idUsuario;
-        
-        public contarPrestamosAtrasadosRequest() {
-        }
-        
-        public contarPrestamosAtrasadosRequest(int idUsuario) {
-            this.idUsuario = idUsuario;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="contarPrestamosAtrasadosResponse", WrapperNamespace="http://bibliows.biblioteca.syntaxerror.com/", IsWrapped=true)]
-    public partial class contarPrestamosAtrasadosResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://bibliows.biblioteca.syntaxerror.com/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int @return;
-        
-        public contarPrestamosAtrasadosResponse() {
-        }
-        
-        public contarPrestamosAtrasadosResponse(int @return) {
-            this.@return = @return;
-        }
-    }
-    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     public interface PrestamoWSChannel : WA_Prueba.PrestamoWS.PrestamoWS, System.ServiceModel.IClientChannel {
     }
@@ -1105,26 +1105,72 @@ namespace WA_Prueba.PrestamoWS {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WA_Prueba.PrestamoWS.eliminarPrestamoResponse WA_Prueba.PrestamoWS.PrestamoWS.eliminarPrestamo(WA_Prueba.PrestamoWS.eliminarPrestamoRequest request) {
-            return base.Channel.eliminarPrestamo(request);
+        WA_Prueba.PrestamoWS.contarPrestamosActivosResponse WA_Prueba.PrestamoWS.PrestamoWS.contarPrestamosActivos(WA_Prueba.PrestamoWS.contarPrestamosActivosRequest request) {
+            return base.Channel.contarPrestamosActivos(request);
         }
         
-        public int eliminarPrestamo(int idPrestamo) {
-            WA_Prueba.PrestamoWS.eliminarPrestamoRequest inValue = new WA_Prueba.PrestamoWS.eliminarPrestamoRequest();
-            inValue.idPrestamo = idPrestamo;
-            WA_Prueba.PrestamoWS.eliminarPrestamoResponse retVal = ((WA_Prueba.PrestamoWS.PrestamoWS)(this)).eliminarPrestamo(inValue);
+        public int contarPrestamosActivos(int idUsuario) {
+            WA_Prueba.PrestamoWS.contarPrestamosActivosRequest inValue = new WA_Prueba.PrestamoWS.contarPrestamosActivosRequest();
+            inValue.idUsuario = idUsuario;
+            WA_Prueba.PrestamoWS.contarPrestamosActivosResponse retVal = ((WA_Prueba.PrestamoWS.PrestamoWS)(this)).contarPrestamosActivos(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<WA_Prueba.PrestamoWS.eliminarPrestamoResponse> WA_Prueba.PrestamoWS.PrestamoWS.eliminarPrestamoAsync(WA_Prueba.PrestamoWS.eliminarPrestamoRequest request) {
-            return base.Channel.eliminarPrestamoAsync(request);
+        System.Threading.Tasks.Task<WA_Prueba.PrestamoWS.contarPrestamosActivosResponse> WA_Prueba.PrestamoWS.PrestamoWS.contarPrestamosActivosAsync(WA_Prueba.PrestamoWS.contarPrestamosActivosRequest request) {
+            return base.Channel.contarPrestamosActivosAsync(request);
         }
         
-        public System.Threading.Tasks.Task<WA_Prueba.PrestamoWS.eliminarPrestamoResponse> eliminarPrestamoAsync(int idPrestamo) {
-            WA_Prueba.PrestamoWS.eliminarPrestamoRequest inValue = new WA_Prueba.PrestamoWS.eliminarPrestamoRequest();
-            inValue.idPrestamo = idPrestamo;
-            return ((WA_Prueba.PrestamoWS.PrestamoWS)(this)).eliminarPrestamoAsync(inValue);
+        public System.Threading.Tasks.Task<WA_Prueba.PrestamoWS.contarPrestamosActivosResponse> contarPrestamosActivosAsync(int idUsuario) {
+            WA_Prueba.PrestamoWS.contarPrestamosActivosRequest inValue = new WA_Prueba.PrestamoWS.contarPrestamosActivosRequest();
+            inValue.idUsuario = idUsuario;
+            return ((WA_Prueba.PrestamoWS.PrestamoWS)(this)).contarPrestamosActivosAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WA_Prueba.PrestamoWS.contarPrestamosAtrasadosResponse WA_Prueba.PrestamoWS.PrestamoWS.contarPrestamosAtrasados(WA_Prueba.PrestamoWS.contarPrestamosAtrasadosRequest request) {
+            return base.Channel.contarPrestamosAtrasados(request);
+        }
+        
+        public int contarPrestamosAtrasados(int idUsuario) {
+            WA_Prueba.PrestamoWS.contarPrestamosAtrasadosRequest inValue = new WA_Prueba.PrestamoWS.contarPrestamosAtrasadosRequest();
+            inValue.idUsuario = idUsuario;
+            WA_Prueba.PrestamoWS.contarPrestamosAtrasadosResponse retVal = ((WA_Prueba.PrestamoWS.PrestamoWS)(this)).contarPrestamosAtrasados(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<WA_Prueba.PrestamoWS.contarPrestamosAtrasadosResponse> WA_Prueba.PrestamoWS.PrestamoWS.contarPrestamosAtrasadosAsync(WA_Prueba.PrestamoWS.contarPrestamosAtrasadosRequest request) {
+            return base.Channel.contarPrestamosAtrasadosAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<WA_Prueba.PrestamoWS.contarPrestamosAtrasadosResponse> contarPrestamosAtrasadosAsync(int idUsuario) {
+            WA_Prueba.PrestamoWS.contarPrestamosAtrasadosRequest inValue = new WA_Prueba.PrestamoWS.contarPrestamosAtrasadosRequest();
+            inValue.idUsuario = idUsuario;
+            return ((WA_Prueba.PrestamoWS.PrestamoWS)(this)).contarPrestamosAtrasadosAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WA_Prueba.PrestamoWS.contarPrestamosPorMaterialResponse WA_Prueba.PrestamoWS.PrestamoWS.contarPrestamosPorMaterial(WA_Prueba.PrestamoWS.contarPrestamosPorMaterialRequest request) {
+            return base.Channel.contarPrestamosPorMaterial(request);
+        }
+        
+        public int contarPrestamosPorMaterial(int idMaterial) {
+            WA_Prueba.PrestamoWS.contarPrestamosPorMaterialRequest inValue = new WA_Prueba.PrestamoWS.contarPrestamosPorMaterialRequest();
+            inValue.idMaterial = idMaterial;
+            WA_Prueba.PrestamoWS.contarPrestamosPorMaterialResponse retVal = ((WA_Prueba.PrestamoWS.PrestamoWS)(this)).contarPrestamosPorMaterial(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<WA_Prueba.PrestamoWS.contarPrestamosPorMaterialResponse> WA_Prueba.PrestamoWS.PrestamoWS.contarPrestamosPorMaterialAsync(WA_Prueba.PrestamoWS.contarPrestamosPorMaterialRequest request) {
+            return base.Channel.contarPrestamosPorMaterialAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<WA_Prueba.PrestamoWS.contarPrestamosPorMaterialResponse> contarPrestamosPorMaterialAsync(int idMaterial) {
+            WA_Prueba.PrestamoWS.contarPrestamosPorMaterialRequest inValue = new WA_Prueba.PrestamoWS.contarPrestamosPorMaterialRequest();
+            inValue.idMaterial = idMaterial;
+            return ((WA_Prueba.PrestamoWS.PrestamoWS)(this)).contarPrestamosPorMaterialAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -1157,6 +1203,27 @@ namespace WA_Prueba.PrestamoWS {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WA_Prueba.PrestamoWS.listarPrestamosResponse WA_Prueba.PrestamoWS.PrestamoWS.listarPrestamos(WA_Prueba.PrestamoWS.listarPrestamosRequest request) {
+            return base.Channel.listarPrestamos(request);
+        }
+        
+        public WA_Prueba.PrestamoWS.prestamoDTO[] listarPrestamos() {
+            WA_Prueba.PrestamoWS.listarPrestamosRequest inValue = new WA_Prueba.PrestamoWS.listarPrestamosRequest();
+            WA_Prueba.PrestamoWS.listarPrestamosResponse retVal = ((WA_Prueba.PrestamoWS.PrestamoWS)(this)).listarPrestamos(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<WA_Prueba.PrestamoWS.listarPrestamosResponse> WA_Prueba.PrestamoWS.PrestamoWS.listarPrestamosAsync(WA_Prueba.PrestamoWS.listarPrestamosRequest request) {
+            return base.Channel.listarPrestamosAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<WA_Prueba.PrestamoWS.listarPrestamosResponse> listarPrestamosAsync() {
+            WA_Prueba.PrestamoWS.listarPrestamosRequest inValue = new WA_Prueba.PrestamoWS.listarPrestamosRequest();
+            return ((WA_Prueba.PrestamoWS.PrestamoWS)(this)).listarPrestamosAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         WA_Prueba.PrestamoWS.obtenerPrestamoResponse WA_Prueba.PrestamoWS.PrestamoWS.obtenerPrestamo(WA_Prueba.PrestamoWS.obtenerPrestamoRequest request) {
             return base.Channel.obtenerPrestamo(request);
         }
@@ -1180,24 +1247,26 @@ namespace WA_Prueba.PrestamoWS {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WA_Prueba.PrestamoWS.listarPrestamosResponse WA_Prueba.PrestamoWS.PrestamoWS.listarPrestamos(WA_Prueba.PrestamoWS.listarPrestamosRequest request) {
-            return base.Channel.listarPrestamos(request);
+        WA_Prueba.PrestamoWS.eliminarPrestamoResponse WA_Prueba.PrestamoWS.PrestamoWS.eliminarPrestamo(WA_Prueba.PrestamoWS.eliminarPrestamoRequest request) {
+            return base.Channel.eliminarPrestamo(request);
         }
         
-        public WA_Prueba.PrestamoWS.prestamoDTO[] listarPrestamos() {
-            WA_Prueba.PrestamoWS.listarPrestamosRequest inValue = new WA_Prueba.PrestamoWS.listarPrestamosRequest();
-            WA_Prueba.PrestamoWS.listarPrestamosResponse retVal = ((WA_Prueba.PrestamoWS.PrestamoWS)(this)).listarPrestamos(inValue);
+        public int eliminarPrestamo(int idPrestamo) {
+            WA_Prueba.PrestamoWS.eliminarPrestamoRequest inValue = new WA_Prueba.PrestamoWS.eliminarPrestamoRequest();
+            inValue.idPrestamo = idPrestamo;
+            WA_Prueba.PrestamoWS.eliminarPrestamoResponse retVal = ((WA_Prueba.PrestamoWS.PrestamoWS)(this)).eliminarPrestamo(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<WA_Prueba.PrestamoWS.listarPrestamosResponse> WA_Prueba.PrestamoWS.PrestamoWS.listarPrestamosAsync(WA_Prueba.PrestamoWS.listarPrestamosRequest request) {
-            return base.Channel.listarPrestamosAsync(request);
+        System.Threading.Tasks.Task<WA_Prueba.PrestamoWS.eliminarPrestamoResponse> WA_Prueba.PrestamoWS.PrestamoWS.eliminarPrestamoAsync(WA_Prueba.PrestamoWS.eliminarPrestamoRequest request) {
+            return base.Channel.eliminarPrestamoAsync(request);
         }
         
-        public System.Threading.Tasks.Task<WA_Prueba.PrestamoWS.listarPrestamosResponse> listarPrestamosAsync() {
-            WA_Prueba.PrestamoWS.listarPrestamosRequest inValue = new WA_Prueba.PrestamoWS.listarPrestamosRequest();
-            return ((WA_Prueba.PrestamoWS.PrestamoWS)(this)).listarPrestamosAsync(inValue);
+        public System.Threading.Tasks.Task<WA_Prueba.PrestamoWS.eliminarPrestamoResponse> eliminarPrestamoAsync(int idPrestamo) {
+            WA_Prueba.PrestamoWS.eliminarPrestamoRequest inValue = new WA_Prueba.PrestamoWS.eliminarPrestamoRequest();
+            inValue.idPrestamo = idPrestamo;
+            return ((WA_Prueba.PrestamoWS.PrestamoWS)(this)).eliminarPrestamoAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -1229,75 +1298,6 @@ namespace WA_Prueba.PrestamoWS {
             inValue.fechaDevolucion = fechaDevolucion;
             inValue.idPersona = idPersona;
             return ((WA_Prueba.PrestamoWS.PrestamoWS)(this)).modificarPrestamoAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WA_Prueba.PrestamoWS.contarPrestamosActivosResponse WA_Prueba.PrestamoWS.PrestamoWS.contarPrestamosActivos(WA_Prueba.PrestamoWS.contarPrestamosActivosRequest request) {
-            return base.Channel.contarPrestamosActivos(request);
-        }
-        
-        public int contarPrestamosActivos(int idUsuario) {
-            WA_Prueba.PrestamoWS.contarPrestamosActivosRequest inValue = new WA_Prueba.PrestamoWS.contarPrestamosActivosRequest();
-            inValue.idUsuario = idUsuario;
-            WA_Prueba.PrestamoWS.contarPrestamosActivosResponse retVal = ((WA_Prueba.PrestamoWS.PrestamoWS)(this)).contarPrestamosActivos(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<WA_Prueba.PrestamoWS.contarPrestamosActivosResponse> WA_Prueba.PrestamoWS.PrestamoWS.contarPrestamosActivosAsync(WA_Prueba.PrestamoWS.contarPrestamosActivosRequest request) {
-            return base.Channel.contarPrestamosActivosAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<WA_Prueba.PrestamoWS.contarPrestamosActivosResponse> contarPrestamosActivosAsync(int idUsuario) {
-            WA_Prueba.PrestamoWS.contarPrestamosActivosRequest inValue = new WA_Prueba.PrestamoWS.contarPrestamosActivosRequest();
-            inValue.idUsuario = idUsuario;
-            return ((WA_Prueba.PrestamoWS.PrestamoWS)(this)).contarPrestamosActivosAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WA_Prueba.PrestamoWS.contarPrestamosPorMaterialResponse WA_Prueba.PrestamoWS.PrestamoWS.contarPrestamosPorMaterial(WA_Prueba.PrestamoWS.contarPrestamosPorMaterialRequest request) {
-            return base.Channel.contarPrestamosPorMaterial(request);
-        }
-        
-        public int contarPrestamosPorMaterial(int idMaterial) {
-            WA_Prueba.PrestamoWS.contarPrestamosPorMaterialRequest inValue = new WA_Prueba.PrestamoWS.contarPrestamosPorMaterialRequest();
-            inValue.idMaterial = idMaterial;
-            WA_Prueba.PrestamoWS.contarPrestamosPorMaterialResponse retVal = ((WA_Prueba.PrestamoWS.PrestamoWS)(this)).contarPrestamosPorMaterial(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<WA_Prueba.PrestamoWS.contarPrestamosPorMaterialResponse> WA_Prueba.PrestamoWS.PrestamoWS.contarPrestamosPorMaterialAsync(WA_Prueba.PrestamoWS.contarPrestamosPorMaterialRequest request) {
-            return base.Channel.contarPrestamosPorMaterialAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<WA_Prueba.PrestamoWS.contarPrestamosPorMaterialResponse> contarPrestamosPorMaterialAsync(int idMaterial) {
-            WA_Prueba.PrestamoWS.contarPrestamosPorMaterialRequest inValue = new WA_Prueba.PrestamoWS.contarPrestamosPorMaterialRequest();
-            inValue.idMaterial = idMaterial;
-            return ((WA_Prueba.PrestamoWS.PrestamoWS)(this)).contarPrestamosPorMaterialAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WA_Prueba.PrestamoWS.contarPrestamosAtrasadosResponse WA_Prueba.PrestamoWS.PrestamoWS.contarPrestamosAtrasados(WA_Prueba.PrestamoWS.contarPrestamosAtrasadosRequest request) {
-            return base.Channel.contarPrestamosAtrasados(request);
-        }
-        
-        public int contarPrestamosAtrasados(int idUsuario) {
-            WA_Prueba.PrestamoWS.contarPrestamosAtrasadosRequest inValue = new WA_Prueba.PrestamoWS.contarPrestamosAtrasadosRequest();
-            inValue.idUsuario = idUsuario;
-            WA_Prueba.PrestamoWS.contarPrestamosAtrasadosResponse retVal = ((WA_Prueba.PrestamoWS.PrestamoWS)(this)).contarPrestamosAtrasados(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<WA_Prueba.PrestamoWS.contarPrestamosAtrasadosResponse> WA_Prueba.PrestamoWS.PrestamoWS.contarPrestamosAtrasadosAsync(WA_Prueba.PrestamoWS.contarPrestamosAtrasadosRequest request) {
-            return base.Channel.contarPrestamosAtrasadosAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<WA_Prueba.PrestamoWS.contarPrestamosAtrasadosResponse> contarPrestamosAtrasadosAsync(int idUsuario) {
-            WA_Prueba.PrestamoWS.contarPrestamosAtrasadosRequest inValue = new WA_Prueba.PrestamoWS.contarPrestamosAtrasadosRequest();
-            inValue.idUsuario = idUsuario;
-            return ((WA_Prueba.PrestamoWS.PrestamoWS)(this)).contarPrestamosAtrasadosAsync(inValue);
         }
     }
 }

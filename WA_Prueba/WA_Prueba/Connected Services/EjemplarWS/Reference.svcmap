@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="836d4d5e-e96d-4b21-ab97-b99b9395de2c" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="7d5d0427-953a-4e2d-849a-2d39f56c5bfb" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -19,11 +19,11 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:8080/BiblioWS/EjemplarWS?wsdl" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://localhost:8080/myholywrapper/EjemplarWS?wsdl" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="EjemplarWS.xsd" MetadataType="Schema" ID="ae64a4fe-8771-40e9-8a9c-657421c7544f" SourceId="1" SourceUrl="http://localhost:8080/BiblioWS/EjemplarWS?xsd=1" />
-    <MetadataFile FileName="EjemplarWS.wsdl" MetadataType="Wsdl" ID="c7e08cba-97c2-4e9d-9df6-7efc8c811ac8" SourceId="1" SourceUrl="http://localhost:8080/BiblioWS/EjemplarWS?wsdl" />
+    <MetadataFile FileName="EjemplarWS.xsd" MetadataType="Schema" ID="468b69de-77ab-4c10-a778-5a8e160b04b9" SourceId="1" SourceUrl="http://localhost:8080/myholywrapper/EjemplarWS?xsd=1" />
+    <MetadataFile FileName="EjemplarWS.wsdl" MetadataType="Wsdl" ID="c0b7ff2d-af5a-4f96-8276-c5a5ae510b53" SourceId="1" SourceUrl="http://localhost:8080/myholywrapper/EjemplarWS?wsdl" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

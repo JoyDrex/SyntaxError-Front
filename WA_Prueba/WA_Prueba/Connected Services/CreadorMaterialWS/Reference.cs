@@ -16,17 +16,17 @@ namespace WA_Prueba.CreadorMaterialWS {
     public interface CreadorMaterialWS {
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://bibliows.biblioteca.syntaxerror.com/CreadorMaterialWS/existeRelacionReques" +
-            "t", ReplyAction="http://bibliows.biblioteca.syntaxerror.com/CreadorMaterialWS/existeRelacionRespon" +
-            "se")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://bibliows.biblioteca.syntaxerror.com/CreadorMaterialWS/asociarMaterialCread" +
+            "orRequest", ReplyAction="http://bibliows.biblioteca.syntaxerror.com/CreadorMaterialWS/asociarMaterialCread" +
+            "orResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        WA_Prueba.CreadorMaterialWS.existeRelacionResponse existeRelacion(WA_Prueba.CreadorMaterialWS.existeRelacionRequest request);
+        WA_Prueba.CreadorMaterialWS.asociarMaterialCreadorResponse asociarMaterialCreador(WA_Prueba.CreadorMaterialWS.asociarMaterialCreadorRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://bibliows.biblioteca.syntaxerror.com/CreadorMaterialWS/existeRelacionReques" +
-            "t", ReplyAction="http://bibliows.biblioteca.syntaxerror.com/CreadorMaterialWS/existeRelacionRespon" +
-            "se")]
-        System.Threading.Tasks.Task<WA_Prueba.CreadorMaterialWS.existeRelacionResponse> existeRelacionAsync(WA_Prueba.CreadorMaterialWS.existeRelacionRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://bibliows.biblioteca.syntaxerror.com/CreadorMaterialWS/asociarMaterialCread" +
+            "orRequest", ReplyAction="http://bibliows.biblioteca.syntaxerror.com/CreadorMaterialWS/asociarMaterialCread" +
+            "orResponse")]
+        System.Threading.Tasks.Task<WA_Prueba.CreadorMaterialWS.asociarMaterialCreadorResponse> asociarMaterialCreadorAsync(WA_Prueba.CreadorMaterialWS.asociarMaterialCreadorRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://bibliows.biblioteca.syntaxerror.com/CreadorMaterialWS/desasociarMaterialCr" +
@@ -40,19 +40,6 @@ namespace WA_Prueba.CreadorMaterialWS {
             "eadorRequest", ReplyAction="http://bibliows.biblioteca.syntaxerror.com/CreadorMaterialWS/desasociarMaterialCr" +
             "eadorResponse")]
         System.Threading.Tasks.Task<WA_Prueba.CreadorMaterialWS.desasociarMaterialCreadorResponse> desasociarMaterialCreadorAsync(WA_Prueba.CreadorMaterialWS.desasociarMaterialCreadorRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://bibliows.biblioteca.syntaxerror.com/CreadorMaterialWS/asociarMaterialCread" +
-            "orRequest", ReplyAction="http://bibliows.biblioteca.syntaxerror.com/CreadorMaterialWS/asociarMaterialCread" +
-            "orResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        WA_Prueba.CreadorMaterialWS.asociarMaterialCreadorResponse asociarMaterialCreador(WA_Prueba.CreadorMaterialWS.asociarMaterialCreadorRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://bibliows.biblioteca.syntaxerror.com/CreadorMaterialWS/asociarMaterialCread" +
-            "orRequest", ReplyAction="http://bibliows.biblioteca.syntaxerror.com/CreadorMaterialWS/asociarMaterialCread" +
-            "orResponse")]
-        System.Threading.Tasks.Task<WA_Prueba.CreadorMaterialWS.asociarMaterialCreadorResponse> asociarMaterialCreadorAsync(WA_Prueba.CreadorMaterialWS.asociarMaterialCreadorRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://bibliows.biblioteca.syntaxerror.com/CreadorMaterialWS/listarMaterialesPorC" +
@@ -79,13 +66,26 @@ namespace WA_Prueba.CreadorMaterialWS {
             "terialRequest", ReplyAction="http://bibliows.biblioteca.syntaxerror.com/CreadorMaterialWS/listarCreadoresPorMa" +
             "terialResponse")]
         System.Threading.Tasks.Task<WA_Prueba.CreadorMaterialWS.listarCreadoresPorMaterialResponse> listarCreadoresPorMaterialAsync(WA_Prueba.CreadorMaterialWS.listarCreadoresPorMaterialRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://bibliows.biblioteca.syntaxerror.com/CreadorMaterialWS/existeRelacionReques" +
+            "t", ReplyAction="http://bibliows.biblioteca.syntaxerror.com/CreadorMaterialWS/existeRelacionRespon" +
+            "se")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        WA_Prueba.CreadorMaterialWS.existeRelacionResponse existeRelacion(WA_Prueba.CreadorMaterialWS.existeRelacionRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://bibliows.biblioteca.syntaxerror.com/CreadorMaterialWS/existeRelacionReques" +
+            "t", ReplyAction="http://bibliows.biblioteca.syntaxerror.com/CreadorMaterialWS/existeRelacionRespon" +
+            "se")]
+        System.Threading.Tasks.Task<WA_Prueba.CreadorMaterialWS.existeRelacionResponse> existeRelacionAsync(WA_Prueba.CreadorMaterialWS.existeRelacionRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="existeRelacion", WrapperNamespace="http://bibliows.biblioteca.syntaxerror.com/", IsWrapped=true)]
-    public partial class existeRelacionRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="asociarMaterialCreador", WrapperNamespace="http://bibliows.biblioteca.syntaxerror.com/", IsWrapped=true)]
+    public partial class asociarMaterialCreadorRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://bibliows.biblioteca.syntaxerror.com/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
@@ -95,10 +95,10 @@ namespace WA_Prueba.CreadorMaterialWS {
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public int idCreador;
         
-        public existeRelacionRequest() {
+        public asociarMaterialCreadorRequest() {
         }
         
-        public existeRelacionRequest(int idMaterial, int idCreador) {
+        public asociarMaterialCreadorRequest(int idMaterial, int idCreador) {
             this.idMaterial = idMaterial;
             this.idCreador = idCreador;
         }
@@ -107,17 +107,17 @@ namespace WA_Prueba.CreadorMaterialWS {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="existeRelacionResponse", WrapperNamespace="http://bibliows.biblioteca.syntaxerror.com/", IsWrapped=true)]
-    public partial class existeRelacionResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="asociarMaterialCreadorResponse", WrapperNamespace="http://bibliows.biblioteca.syntaxerror.com/", IsWrapped=true)]
+    public partial class asociarMaterialCreadorResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://bibliows.biblioteca.syntaxerror.com/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public bool @return;
+        public int @return;
         
-        public existeRelacionResponse() {
+        public asociarMaterialCreadorResponse() {
         }
         
-        public existeRelacionResponse(bool @return) {
+        public asociarMaterialCreadorResponse(int @return) {
             this.@return = @return;
         }
     }
@@ -163,49 +163,8 @@ namespace WA_Prueba.CreadorMaterialWS {
         }
     }
     
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="asociarMaterialCreador", WrapperNamespace="http://bibliows.biblioteca.syntaxerror.com/", IsWrapped=true)]
-    public partial class asociarMaterialCreadorRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://bibliows.biblioteca.syntaxerror.com/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idMaterial;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://bibliows.biblioteca.syntaxerror.com/", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idCreador;
-        
-        public asociarMaterialCreadorRequest() {
-        }
-        
-        public asociarMaterialCreadorRequest(int idMaterial, int idCreador) {
-            this.idMaterial = idMaterial;
-            this.idCreador = idCreador;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="asociarMaterialCreadorResponse", WrapperNamespace="http://bibliows.biblioteca.syntaxerror.com/", IsWrapped=true)]
-    public partial class asociarMaterialCreadorResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://bibliows.biblioteca.syntaxerror.com/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int @return;
-        
-        public asociarMaterialCreadorResponse() {
-        }
-        
-        public asociarMaterialCreadorResponse(int @return) {
-            this.@return = @return;
-        }
-    }
-    
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -363,7 +322,7 @@ namespace WA_Prueba.CreadorMaterialWS {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -451,7 +410,7 @@ namespace WA_Prueba.CreadorMaterialWS {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -623,7 +582,7 @@ namespace WA_Prueba.CreadorMaterialWS {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://bibliows.biblioteca.syntaxerror.com/")]
     public enum tipoAutor {
@@ -654,7 +613,7 @@ namespace WA_Prueba.CreadorMaterialWS {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9037.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.9032.0")]
     [System.SerializableAttribute()]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://bibliows.biblioteca.syntaxerror.com/")]
     public enum nivelDeIngles {
@@ -741,6 +700,47 @@ namespace WA_Prueba.CreadorMaterialWS {
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="existeRelacion", WrapperNamespace="http://bibliows.biblioteca.syntaxerror.com/", IsWrapped=true)]
+    public partial class existeRelacionRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://bibliows.biblioteca.syntaxerror.com/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idMaterial;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://bibliows.biblioteca.syntaxerror.com/", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idCreador;
+        
+        public existeRelacionRequest() {
+        }
+        
+        public existeRelacionRequest(int idMaterial, int idCreador) {
+            this.idMaterial = idMaterial;
+            this.idCreador = idCreador;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="existeRelacionResponse", WrapperNamespace="http://bibliows.biblioteca.syntaxerror.com/", IsWrapped=true)]
+    public partial class existeRelacionResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://bibliows.biblioteca.syntaxerror.com/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public bool @return;
+        
+        public existeRelacionResponse() {
+        }
+        
+        public existeRelacionResponse(bool @return) {
+            this.@return = @return;
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     public interface CreadorMaterialWSChannel : WA_Prueba.CreadorMaterialWS.CreadorMaterialWS, System.ServiceModel.IClientChannel {
     }
@@ -769,28 +769,28 @@ namespace WA_Prueba.CreadorMaterialWS {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WA_Prueba.CreadorMaterialWS.existeRelacionResponse WA_Prueba.CreadorMaterialWS.CreadorMaterialWS.existeRelacion(WA_Prueba.CreadorMaterialWS.existeRelacionRequest request) {
-            return base.Channel.existeRelacion(request);
+        WA_Prueba.CreadorMaterialWS.asociarMaterialCreadorResponse WA_Prueba.CreadorMaterialWS.CreadorMaterialWS.asociarMaterialCreador(WA_Prueba.CreadorMaterialWS.asociarMaterialCreadorRequest request) {
+            return base.Channel.asociarMaterialCreador(request);
         }
         
-        public bool existeRelacion(int idMaterial, int idCreador) {
-            WA_Prueba.CreadorMaterialWS.existeRelacionRequest inValue = new WA_Prueba.CreadorMaterialWS.existeRelacionRequest();
+        public int asociarMaterialCreador(int idMaterial, int idCreador) {
+            WA_Prueba.CreadorMaterialWS.asociarMaterialCreadorRequest inValue = new WA_Prueba.CreadorMaterialWS.asociarMaterialCreadorRequest();
             inValue.idMaterial = idMaterial;
             inValue.idCreador = idCreador;
-            WA_Prueba.CreadorMaterialWS.existeRelacionResponse retVal = ((WA_Prueba.CreadorMaterialWS.CreadorMaterialWS)(this)).existeRelacion(inValue);
+            WA_Prueba.CreadorMaterialWS.asociarMaterialCreadorResponse retVal = ((WA_Prueba.CreadorMaterialWS.CreadorMaterialWS)(this)).asociarMaterialCreador(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<WA_Prueba.CreadorMaterialWS.existeRelacionResponse> WA_Prueba.CreadorMaterialWS.CreadorMaterialWS.existeRelacionAsync(WA_Prueba.CreadorMaterialWS.existeRelacionRequest request) {
-            return base.Channel.existeRelacionAsync(request);
+        System.Threading.Tasks.Task<WA_Prueba.CreadorMaterialWS.asociarMaterialCreadorResponse> WA_Prueba.CreadorMaterialWS.CreadorMaterialWS.asociarMaterialCreadorAsync(WA_Prueba.CreadorMaterialWS.asociarMaterialCreadorRequest request) {
+            return base.Channel.asociarMaterialCreadorAsync(request);
         }
         
-        public System.Threading.Tasks.Task<WA_Prueba.CreadorMaterialWS.existeRelacionResponse> existeRelacionAsync(int idMaterial, int idCreador) {
-            WA_Prueba.CreadorMaterialWS.existeRelacionRequest inValue = new WA_Prueba.CreadorMaterialWS.existeRelacionRequest();
+        public System.Threading.Tasks.Task<WA_Prueba.CreadorMaterialWS.asociarMaterialCreadorResponse> asociarMaterialCreadorAsync(int idMaterial, int idCreador) {
+            WA_Prueba.CreadorMaterialWS.asociarMaterialCreadorRequest inValue = new WA_Prueba.CreadorMaterialWS.asociarMaterialCreadorRequest();
             inValue.idMaterial = idMaterial;
             inValue.idCreador = idCreador;
-            return ((WA_Prueba.CreadorMaterialWS.CreadorMaterialWS)(this)).existeRelacionAsync(inValue);
+            return ((WA_Prueba.CreadorMaterialWS.CreadorMaterialWS)(this)).asociarMaterialCreadorAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -816,31 +816,6 @@ namespace WA_Prueba.CreadorMaterialWS {
             inValue.idMaterial = idMaterial;
             inValue.idCreador = idCreador;
             return ((WA_Prueba.CreadorMaterialWS.CreadorMaterialWS)(this)).desasociarMaterialCreadorAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WA_Prueba.CreadorMaterialWS.asociarMaterialCreadorResponse WA_Prueba.CreadorMaterialWS.CreadorMaterialWS.asociarMaterialCreador(WA_Prueba.CreadorMaterialWS.asociarMaterialCreadorRequest request) {
-            return base.Channel.asociarMaterialCreador(request);
-        }
-        
-        public int asociarMaterialCreador(int idMaterial, int idCreador) {
-            WA_Prueba.CreadorMaterialWS.asociarMaterialCreadorRequest inValue = new WA_Prueba.CreadorMaterialWS.asociarMaterialCreadorRequest();
-            inValue.idMaterial = idMaterial;
-            inValue.idCreador = idCreador;
-            WA_Prueba.CreadorMaterialWS.asociarMaterialCreadorResponse retVal = ((WA_Prueba.CreadorMaterialWS.CreadorMaterialWS)(this)).asociarMaterialCreador(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<WA_Prueba.CreadorMaterialWS.asociarMaterialCreadorResponse> WA_Prueba.CreadorMaterialWS.CreadorMaterialWS.asociarMaterialCreadorAsync(WA_Prueba.CreadorMaterialWS.asociarMaterialCreadorRequest request) {
-            return base.Channel.asociarMaterialCreadorAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<WA_Prueba.CreadorMaterialWS.asociarMaterialCreadorResponse> asociarMaterialCreadorAsync(int idMaterial, int idCreador) {
-            WA_Prueba.CreadorMaterialWS.asociarMaterialCreadorRequest inValue = new WA_Prueba.CreadorMaterialWS.asociarMaterialCreadorRequest();
-            inValue.idMaterial = idMaterial;
-            inValue.idCreador = idCreador;
-            return ((WA_Prueba.CreadorMaterialWS.CreadorMaterialWS)(this)).asociarMaterialCreadorAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -887,6 +862,31 @@ namespace WA_Prueba.CreadorMaterialWS {
             WA_Prueba.CreadorMaterialWS.listarCreadoresPorMaterialRequest inValue = new WA_Prueba.CreadorMaterialWS.listarCreadoresPorMaterialRequest();
             inValue.idMaterial = idMaterial;
             return ((WA_Prueba.CreadorMaterialWS.CreadorMaterialWS)(this)).listarCreadoresPorMaterialAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WA_Prueba.CreadorMaterialWS.existeRelacionResponse WA_Prueba.CreadorMaterialWS.CreadorMaterialWS.existeRelacion(WA_Prueba.CreadorMaterialWS.existeRelacionRequest request) {
+            return base.Channel.existeRelacion(request);
+        }
+        
+        public bool existeRelacion(int idMaterial, int idCreador) {
+            WA_Prueba.CreadorMaterialWS.existeRelacionRequest inValue = new WA_Prueba.CreadorMaterialWS.existeRelacionRequest();
+            inValue.idMaterial = idMaterial;
+            inValue.idCreador = idCreador;
+            WA_Prueba.CreadorMaterialWS.existeRelacionResponse retVal = ((WA_Prueba.CreadorMaterialWS.CreadorMaterialWS)(this)).existeRelacion(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<WA_Prueba.CreadorMaterialWS.existeRelacionResponse> WA_Prueba.CreadorMaterialWS.CreadorMaterialWS.existeRelacionAsync(WA_Prueba.CreadorMaterialWS.existeRelacionRequest request) {
+            return base.Channel.existeRelacionAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<WA_Prueba.CreadorMaterialWS.existeRelacionResponse> existeRelacionAsync(int idMaterial, int idCreador) {
+            WA_Prueba.CreadorMaterialWS.existeRelacionRequest inValue = new WA_Prueba.CreadorMaterialWS.existeRelacionRequest();
+            inValue.idMaterial = idMaterial;
+            inValue.idCreador = idCreador;
+            return ((WA_Prueba.CreadorMaterialWS.CreadorMaterialWS)(this)).existeRelacionAsync(inValue);
         }
     }
 }

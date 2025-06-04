@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SavedWcfConfigurationInformation xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="9.1" CheckSum="bNf5TcbD3i6O6ruYW1Z/HlU7a6y52aUaishJ8RW2kmk=">
+<SavedWcfConfigurationInformation xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="9.1" CheckSum="IwyuM0yfsnTDAxK3guMtX83w8Epvmk7gys7/XoElEYs=">
   <bindingConfigurations>
     <bindingConfiguration bindingType="basicHttpBinding" name="PrestamoWSPortBinding">
       <properties>
@@ -112,10 +112,10 @@
     </bindingConfiguration>
   </bindingConfigurations>
   <endpoints>
-    <endpoint name="PrestamoWSPort" contract="PrestamoWS.PrestamoWS" bindingType="basicHttpBinding" address="http://localhost:8080/BiblioWS/PrestamoWS" bindingConfiguration="PrestamoWSPortBinding">
+    <endpoint name="PrestamoWSPort" contract="PrestamoWS.PrestamoWS" bindingType="basicHttpBinding" address="http://localhost:8080/myholywrapper/PrestamoWS" bindingConfiguration="PrestamoWSPortBinding">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>http://localhost:8080/BiblioWS/PrestamoWS</serializedValue>
+          <serializedValue>http://localhost:8080/myholywrapper/PrestamoWS</serializedValue>
         </property>
         <property path="/behaviorConfiguration" isComplexType="false" isExplicitlyDefined="false" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue />

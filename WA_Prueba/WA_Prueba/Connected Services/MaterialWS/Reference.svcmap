@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="824925d5-452e-47f9-8ddd-b6a457c50124" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="7587e7d9-5e47-40df-b76f-de0882b497d7" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -22,8 +22,8 @@
     <MetadataSource Address="http://localhost:8080/myholywrapper/MaterialWS?wsdl" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="MaterialWS.xsd" MetadataType="Schema" ID="ebc13b1d-2b70-490f-85bc-18392f5493ac" SourceId="1" SourceUrl="http://localhost:8080/myholywrapper/MaterialWS?xsd=1" />
-    <MetadataFile FileName="MaterialWS.wsdl" MetadataType="Wsdl" ID="d31eade1-7428-4d29-b6d0-e39188bfd5be" SourceId="1" SourceUrl="http://localhost:8080/myholywrapper/MaterialWS?wsdl" />
+    <MetadataFile FileName="MaterialWS.xsd" MetadataType="Schema" ID="b5f992b3-d468-4293-942c-2b166ba11826" SourceId="1" SourceUrl="http://localhost:8080/myholywrapper/MaterialWS?xsd=1" />
+    <MetadataFile FileName="MaterialWS.wsdl" MetadataType="Wsdl" ID="5814e371-a761-4fd6-9b4e-3b6c137e6411" SourceId="1" SourceUrl="http://localhost:8080/myholywrapper/MaterialWS?wsdl" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

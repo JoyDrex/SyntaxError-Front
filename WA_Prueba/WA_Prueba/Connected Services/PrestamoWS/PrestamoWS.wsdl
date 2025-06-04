@@ -2,50 +2,14 @@
 <definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://bibliows.biblioteca.syntaxerror.com/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="PrestamoWS" targetNamespace="http://bibliows.biblioteca.syntaxerror.com/" xmlns="http://schemas.xmlsoap.org/wsdl/">
   <types>
     <xsd:schema>
-      <xsd:import schemaLocation="http://localhost:8080/BiblioWS/PrestamoWS?xsd=1" namespace="http://bibliows.biblioteca.syntaxerror.com/" />
+      <xsd:import schemaLocation="http://localhost:8080/myholywrapper/PrestamoWS?xsd=1" namespace="http://bibliows.biblioteca.syntaxerror.com/" />
     </xsd:schema>
   </types>
-  <message name="eliminarPrestamo">
-    <part name="parameters" element="tns:eliminarPrestamo" />
-  </message>
-  <message name="eliminarPrestamoResponse">
-    <part name="parameters" element="tns:eliminarPrestamoResponse" />
-  </message>
-  <message name="insertarPrestamo">
-    <part name="parameters" element="tns:insertarPrestamo" />
-  </message>
-  <message name="insertarPrestamoResponse">
-    <part name="parameters" element="tns:insertarPrestamoResponse" />
-  </message>
-  <message name="obtenerPrestamo">
-    <part name="parameters" element="tns:obtenerPrestamo" />
-  </message>
-  <message name="obtenerPrestamoResponse">
-    <part name="parameters" element="tns:obtenerPrestamoResponse" />
-  </message>
-  <message name="listarPrestamos">
-    <part name="parameters" element="tns:listarPrestamos" />
-  </message>
-  <message name="listarPrestamosResponse">
-    <part name="parameters" element="tns:listarPrestamosResponse" />
-  </message>
-  <message name="modificarPrestamo">
-    <part name="parameters" element="tns:modificarPrestamo" />
-  </message>
-  <message name="modificarPrestamoResponse">
-    <part name="parameters" element="tns:modificarPrestamoResponse" />
-  </message>
   <message name="contarPrestamosActivos">
     <part name="parameters" element="tns:contarPrestamosActivos" />
   </message>
   <message name="contarPrestamosActivosResponse">
     <part name="parameters" element="tns:contarPrestamosActivosResponse" />
-  </message>
-  <message name="contarPrestamosPorMaterial">
-    <part name="parameters" element="tns:contarPrestamosPorMaterial" />
-  </message>
-  <message name="contarPrestamosPorMaterialResponse">
-    <part name="parameters" element="tns:contarPrestamosPorMaterialResponse" />
   </message>
   <message name="contarPrestamosAtrasados">
     <part name="parameters" element="tns:contarPrestamosAtrasados" />
@@ -53,88 +17,88 @@
   <message name="contarPrestamosAtrasadosResponse">
     <part name="parameters" element="tns:contarPrestamosAtrasadosResponse" />
   </message>
+  <message name="contarPrestamosPorMaterial">
+    <part name="parameters" element="tns:contarPrestamosPorMaterial" />
+  </message>
+  <message name="contarPrestamosPorMaterialResponse">
+    <part name="parameters" element="tns:contarPrestamosPorMaterialResponse" />
+  </message>
+  <message name="insertarPrestamo">
+    <part name="parameters" element="tns:insertarPrestamo" />
+  </message>
+  <message name="insertarPrestamoResponse">
+    <part name="parameters" element="tns:insertarPrestamoResponse" />
+  </message>
+  <message name="listarPrestamos">
+    <part name="parameters" element="tns:listarPrestamos" />
+  </message>
+  <message name="listarPrestamosResponse">
+    <part name="parameters" element="tns:listarPrestamosResponse" />
+  </message>
+  <message name="obtenerPrestamo">
+    <part name="parameters" element="tns:obtenerPrestamo" />
+  </message>
+  <message name="obtenerPrestamoResponse">
+    <part name="parameters" element="tns:obtenerPrestamoResponse" />
+  </message>
+  <message name="eliminarPrestamo">
+    <part name="parameters" element="tns:eliminarPrestamo" />
+  </message>
+  <message name="eliminarPrestamoResponse">
+    <part name="parameters" element="tns:eliminarPrestamoResponse" />
+  </message>
+  <message name="modificarPrestamo">
+    <part name="parameters" element="tns:modificarPrestamo" />
+  </message>
+  <message name="modificarPrestamoResponse">
+    <part name="parameters" element="tns:modificarPrestamoResponse" />
+  </message>
   <portType name="PrestamoWS">
-    <operation name="eliminarPrestamo">
-      <input wsam:Action="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/eliminarPrestamoRequest" message="tns:eliminarPrestamo" />
-      <output wsam:Action="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/eliminarPrestamoResponse" message="tns:eliminarPrestamoResponse" />
-    </operation>
-    <operation name="insertarPrestamo">
-      <input wsam:Action="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/insertarPrestamoRequest" message="tns:insertarPrestamo" />
-      <output wsam:Action="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/insertarPrestamoResponse" message="tns:insertarPrestamoResponse" />
-    </operation>
-    <operation name="obtenerPrestamo">
-      <input wsam:Action="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/obtenerPrestamoRequest" message="tns:obtenerPrestamo" />
-      <output wsam:Action="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/obtenerPrestamoResponse" message="tns:obtenerPrestamoResponse" />
-    </operation>
-    <operation name="listarPrestamos">
-      <input wsam:Action="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/listarPrestamosRequest" message="tns:listarPrestamos" />
-      <output wsam:Action="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/listarPrestamosResponse" message="tns:listarPrestamosResponse" />
-    </operation>
-    <operation name="modificarPrestamo">
-      <input wsam:Action="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/modificarPrestamoRequest" message="tns:modificarPrestamo" />
-      <output wsam:Action="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/modificarPrestamoResponse" message="tns:modificarPrestamoResponse" />
-    </operation>
     <operation name="contarPrestamosActivos">
       <input wsam:Action="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/contarPrestamosActivosRequest" message="tns:contarPrestamosActivos" />
       <output wsam:Action="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/contarPrestamosActivosResponse" message="tns:contarPrestamosActivosResponse" />
-    </operation>
-    <operation name="contarPrestamosPorMaterial">
-      <input wsam:Action="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/contarPrestamosPorMaterialRequest" message="tns:contarPrestamosPorMaterial" />
-      <output wsam:Action="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/contarPrestamosPorMaterialResponse" message="tns:contarPrestamosPorMaterialResponse" />
     </operation>
     <operation name="contarPrestamosAtrasados">
       <input wsam:Action="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/contarPrestamosAtrasadosRequest" message="tns:contarPrestamosAtrasados" />
       <output wsam:Action="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/contarPrestamosAtrasadosResponse" message="tns:contarPrestamosAtrasadosResponse" />
     </operation>
+    <operation name="contarPrestamosPorMaterial">
+      <input wsam:Action="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/contarPrestamosPorMaterialRequest" message="tns:contarPrestamosPorMaterial" />
+      <output wsam:Action="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/contarPrestamosPorMaterialResponse" message="tns:contarPrestamosPorMaterialResponse" />
+    </operation>
+    <operation name="insertarPrestamo">
+      <input wsam:Action="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/insertarPrestamoRequest" message="tns:insertarPrestamo" />
+      <output wsam:Action="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/insertarPrestamoResponse" message="tns:insertarPrestamoResponse" />
+    </operation>
+    <operation name="listarPrestamos">
+      <input wsam:Action="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/listarPrestamosRequest" message="tns:listarPrestamos" />
+      <output wsam:Action="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/listarPrestamosResponse" message="tns:listarPrestamosResponse" />
+    </operation>
+    <operation name="obtenerPrestamo">
+      <input wsam:Action="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/obtenerPrestamoRequest" message="tns:obtenerPrestamo" />
+      <output wsam:Action="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/obtenerPrestamoResponse" message="tns:obtenerPrestamoResponse" />
+    </operation>
+    <operation name="eliminarPrestamo">
+      <input wsam:Action="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/eliminarPrestamoRequest" message="tns:eliminarPrestamo" />
+      <output wsam:Action="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/eliminarPrestamoResponse" message="tns:eliminarPrestamoResponse" />
+    </operation>
+    <operation name="modificarPrestamo">
+      <input wsam:Action="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/modificarPrestamoRequest" message="tns:modificarPrestamo" />
+      <output wsam:Action="http://bibliows.biblioteca.syntaxerror.com/PrestamoWS/modificarPrestamoResponse" message="tns:modificarPrestamoResponse" />
+    </operation>
   </portType>
   <binding name="PrestamoWSPortBinding" type="tns:PrestamoWS">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <operation name="eliminarPrestamo">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="insertarPrestamo">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="obtenerPrestamo">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="listarPrestamos">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="modificarPrestamo">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
     <operation name="contarPrestamosActivos">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="contarPrestamosAtrasados">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -152,7 +116,43 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="contarPrestamosAtrasados">
+    <operation name="insertarPrestamo">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarPrestamos">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="obtenerPrestamo">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarPrestamo">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="modificarPrestamo">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -164,7 +164,7 @@
   </binding>
   <service name="PrestamoWS">
     <port name="PrestamoWSPort" binding="tns:PrestamoWSPortBinding">
-      <soap:address location="http://localhost:8080/BiblioWS/PrestamoWS" />
+      <soap:address location="http://localhost:8080/myholywrapper/PrestamoWS" />
     </port>
   </service>
 </definitions>
